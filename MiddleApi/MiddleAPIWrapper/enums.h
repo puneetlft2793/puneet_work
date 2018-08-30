@@ -1,0 +1,1106 @@
+#ifndef ENUMS
+#define ENUMS
+
+
+enum LftDataFormat
+{
+	LFT_CENTROID_40bit = 0		//(x,y) : x = first 20 bits, y = next 20 bits and so on for x and y coordinates.
+};
+
+enum LftFrameFormat
+{
+	LFT_FRAME_RAW = 0,
+	LFT_FRAME_JPEG = 1,
+	LFT_FRAME_TIFF =2
+};
+
+enum SPPUHostConnectionType
+{
+	LFT_HOST_CONNECTION_SER         =	0,
+	LFT_HOST_CONNECTION_ETH         =	1,
+	LFT_HOST_CONNECTION_PCIE        =	2,
+	LFT_HOST_CONNECTION_USB         =	3
+	// Modified for centroid 
+	//LFT_HOST_CONNECTION_USB_FX3    =  4
+};
+
+enum SPPUDeviceType
+{
+	LFT_SPPU_DEV_DAC1				=   0,
+	LFT_SPPU_DEV_DAC2				=   1,
+	LFT_SPPU_DEV_DAC3				=   2,
+	LFT_SPPU_DEV_LMK04806			=   3,
+	LFT_SPPU_DEV_FPGA				=   4,
+	LFT_SPPU_DEV_FPGA_SPI_FLASH     =	5,
+	LFT_SPPU_DEV_DDR				=   6,
+	LFT_SPPU_DEV_FX3_RAM			=   7,
+	LFT_SPPU_DEV_FX3_SPI_FLASH		=	8,
+	LFT_SPPU_DEV_FX3_SDCARD			=   9,
+	LFT_SPPU_DEV_ATTENUATOR			=   10,
+	LFT_SPPU_DEV_STREAM				=	11				//Added for TCL, 16 May 2016
+};
+enum SPPUTestTypes
+{
+	LFT_SPPU_TEST_FPGA					=   0,
+	LFT_SPPU_TEST_DAC_FPGA_INTERFACE	=   1,
+	LFT_SPPU_TEST_SPI_NOR_FLASH		=   2,
+	LFT_SPPU_TEST_SD_CARD				=   3,
+	LFT_SPPU_TEST_DAC					=   4,
+	LFT_SPPU_TEST_CLOCK_SYNTHESIZER	=   5,
+	LFT_SPPU_TEST_DDR3					=   6,
+	LFT_SPPU_TEST_VOLTAGE				=   7,
+	LFT_SPPU_TEST_TEMPERATURE			=   8,
+	LFT_SPPU_TEST_ATTUNATOR			=   9,
+	LFT_SPPU_TEST_PCIE_LINK_UP			=   10,
+	LFT_SPPU_TEST_USB					=   11,
+	LFT_SPPU_TEST_TRIGGE_IN			=   12,
+	LFT_SPPU_TEST_ETHERNET			=   13,
+	LFT_SPPU_TEST_UNIT_TEST			=   14,
+	LFT_SPPU_TEST_I2C_TEST			    =   15,
+	LFT_SPPU_TEST_RS232_TEST			=   16,
+	LFT_SPPU_TEST_RS422_TEST			=   17,
+	LFT_SPPU_TEST_SRAM_TEST			    =   18,
+	LFT_SPPU_TEST_RTC_TEST			    =   19,
+	LFT_SPPU_TEST_EMMC_TEST			    =   20,
+	LFT_SPPU_TEST_PARALLELNOR_FLASH     =   21,
+	LFT_AIPB_SIC_PARALLELNOR_FLASH		=	22,
+	LFT_AIPB_SIC_DDR3					=   23,
+	LFT_AIPB_SIC_ETHERNET				=   24,
+	LFT_AIPB_SIC_SENSOR					=   25,
+	LFT_CENT_I2C						=   26,
+	LFT_AIPB_SIC_SENSOR_LOW				=   27,
+	LFT_AIPB_SIC_SENSOR_HIGH			=   28,
+	LFT_SPPU_TEST_FX3_USB				= 29,
+	LFT_VAB_File_List					= 30,
+	LFT_VAB_File_Delete					= 31,
+	LFT_VAB_File_Save					= 32,
+	LFT_VAB_File_Run					= 33,
+	LFT_SIC_File_wr						=34,
+	LFT_SIC_File_rd						=35,
+	LFT_MegaPxl_BPI_FLASH				=   36,
+	  LFT_MegaPxl_USB_UART				=   37,
+
+
+};
+enum SPPUFPGAProp
+{
+	LFT_SPPU_FPGA_PROP_OP_MODE					=	0,
+	LFT_SPPU_FPGA_PROP_AMPLITUDE_RF_channel_1	=   1,
+	LFT_SPPU_FPGA_PROP_AMPLITUDE_RF_channel_2	=   2,
+	LFT_SPPU_FPGA_PROP_AMPLITUDE_IF				=	3,
+	LFT_SPPU_FPGA_PROP_PULSE_WIDTH_channel_1	=   4,
+	LFT_SPPU_FPGA_PROP_PULSE_WIDTH_channel_2	=   5,
+	LFT_SPPU_FPGA_PROP_SIGNAL_DELAY_channel_1	=	6,
+	LFT_SPPU_FPGA_PROP_SIGNAL_DELAY_channel_2	=	7,
+	LFT_SPPU_FPGA_PROP_TRGGR_PRI				=   8,
+	LFT_SPPU_FPGA_PROP_TRGGR_WIDTH				=   9,
+	LFT_SPPU_FPGA_PROP_DATA_CLK					=   10,
+	LFT_SPPU_FPGA_PROP_FPGA_OUT_CLK				=   11,
+	LFT_SPPU_FPGA_PROP_PLL_LOCK_STS				=   12,
+	LFT_SPPU_FPGA_PROP_DAC_FIFO_ERR				=   13,
+	LFT_SPPU_FPGA_PROP_IQ_SAMP_RATE				=   14,
+	LFT_SPPU_FPGA_PROP_INTRPLTN					=   15,
+	LFT_SPPU_FPGA_PROP_NCO_OUT_FREQ				=   16,
+	LFT_SPPU_FPGA_PROP_CLOCK_SOURCE				=   17,
+	LFT_SPPU_FPGA_PROP_MAX_OP_TEMP				=   18,
+	LFT_SPPU_FPGA_PROP_DAC1_FIFO_ERR			=	19,
+	LFT_SPPU_FPGA_PROP_DAC2_FIFO_ERR			=	20,
+	LFT_SPPU_FPGA_PROP_DAC3_FIFO_ERR			=	21,
+/********************************************************************/
+/******************** Video Archival *******************************/
+	LFT_FPGA_PROP_VA_Memory_Init				=	22,
+	LFT_FPGA_PROP_VA_Start_Capture				=	23,
+	LFT_FPGA_PROP_VA_Stop_capture				=	24,
+	LFT_FPGA_PROP_VA_Take_SnapShot				=	25,
+	LFT_FPGA_PROP_VA_Read_Flash_Data			=	26,
+	LFT_FPGA_PROP_VA_Memory_Erase				=	27,
+	LFT_FPGA_PROP_VA_Read_Ready					=	28,
+	LFT_FPGA_PROP_VA_Read_Done					=	29,
+	LFT_FPGA_PROP_VA_Mem_Full					=	30,
+	LFT_FPGA_PROP_VA_SetTime_Command			=	31,
+	LFT_FPGA_PROP_VA_GetTime_Command			=	32,
+	LFT_FPGA_PROP_VA_GetTimeRegister_Ready		=	33,
+	LFT_FPGA_PROP_VA_Memo_ReadSize				=	34,
+	LFT_FPGA_PROP_VA_Mem_read_Start_Add			=	35,
+	LFT_FPGA_PROP_VA_SetTime_Reg				=	36,
+	LFT_FPGA_PROP_VA_GetTime_Reg				=	37,
+
+/********************************************************************/
+
+/******************** Video Enhancement *******************************/
+	LFT_FPGA_PROP_VE_Video_Algo_Selction		=	38,
+	LFT_FPGA_PROP_VE_Contrast_Algo_Selection	=	39,
+	LFT_FPGA_PROP_VE_PhotoMetric_Variance		=	40,
+	LFT_FPGA_PROP_VE_GeoMetric_Variance			=	41,
+	LFT_FPGA_PROP_VE_Gain_Offset				=	42,
+	LFT_FPGA_PROP_VE_SDGain_Limit				=	43,
+	LFT_FPGA_PROP_VE_SD_Mean					=	44,
+	LFT_FPGA_PROP_VE_SmallScale_Weight			=	45,
+	LFT_FPGA_PROP_VE_LargeScale_Weight			=	46,
+	LFT_FPGA_PROP_VE_ColorRestoration_Alpha		=	47,
+	LFT_FPGA_PROP_VE_ColorRestoration_Beta		=	48,
+	LFT_FPGA_PROP_VE_Gain_Comp					=	49,
+	LFT_FPGA_PROP_VE_OffSet_Comp				=	50,
+	
+
+/********************************************************************/	
+
+/******************** Video Stabilization **************************/
+	LFT_FPGA_PROP_VS_Input_VideoType			=	51,
+	LFT_FPGA_PROP_VS_Enable_Stablization		=	52,
+	LFT_FPGA_PROP_VS_X1_Cordi					=	53,
+	LFT_FPGA_PROP_VS_Y1_Cordi					=	54,
+	LFT_FPGA_PROP_VS_X2_Cordi					=	55,
+	LFT_FPGA_PROP_VS_Y2_Cordi					=	56,
+
+/********************************************************************/
+
+/******************** Video Object Tracking **************************/
+	LFT_FPGA_PROP_VO_Input_VideoType			=	57,
+	LFT_FPGA_PROP_VO_Enable_Tracking			=	58,
+	LFT_FPGA_PROP_VO_Algo_Type					=	59,
+	LFT_FPGA_PROP_VO_X1_Cordi					=	60,
+	LFT_FPGA_PROP_VO_Y1_Cordi					=	61,
+	LFT_FPGA_PROP_VO_X2_Cordi					=	62,
+	LFT_FPGA_PROP_VO_Y2_Cordi					=	63,
+	LFT_FPGA_PROP_SIC_SensorIntigration			=64,
+	LFT_FPGA_PROP_SIC_Frame_Size			    =   65,
+	LFT_FPGA_PROP_SIC_CalibratedImage_OnOff		=66,
+	LFT_FPGA_PROP_SIC_CalibratedImage_Pulse		=67,
+	LFT_FPGA_PROP_SIC_Calibratedresult_Block	=68,
+	LFT_FPGA_PROP_SIC_DeviceReset				=69,
+
+/********************************************************************/
+//Adding Cenroid_appplication code, __HP__, follow __FC__ to find code changes , 24 May 2016.
+	LFT_FPGA_PROP_Cam_Frame_Rate				=	70,			//For original video display ??
+	LFT_FPGA_PROP_Threshold_Vlaue				=	71,
+	LFT_FPGA_PROP_DAC_Select					=	72,
+	LFT_FPGA_PROP_Stream_Enable					=	73,
+	LFT_FPGA_PROP_Start_Recording				=	74,
+	LFT_FPGA_PROP_Retrive_Recording				=	75,
+	LFT_FPGA_PROP_Stream_FIFO_Reset				=	76,
+	LFT_FPGA_PROP_Centroid_Design_Reset			=	77,
+	LFT_FPGA_PROP_Centroid_Frame_RateConfig		=	78,
+	LFT_FPGA_PROP_Centroid_BitFileTypeCheck		=	79,
+
+	/******************************************************************/
+
+	LFT_FPGA_PROP_ISTARC_LVDS		=	80,
+	LFT_FPGA_PROP_ISTARC_DDS		=	81,
+	LFT_FPGA_PROP_STRMN_strt		=	82,
+	LFT_FPGA_PROP_STRMN_stop		=	83,
+	LFT_FPGA_PROP_CH_sel			=	84,
+	LFT_FPGA_PROP_window_sz			=	85,
+	LFT_FPGA_PROP_CNT_ENB			=	86,
+	LFT_FPGA_PLAYBACK_TRG_PulseWdth =   87,
+	LFT_FPGA_PLAYBACK_TRG_PulseGap  =   88,
+	LFT_FPGA_PLAYBACK_DataCount_per_Trg= 89,
+	LFT_FPGA_PLAYBACK_Trgr_SRC		= 90,
+	LFT_FPGA_trgr_start				= 91,
+	LFT_FPGA_Trg_Mode				= 92,
+	LFT_FPGA_PlyBK_SW_TRGR_ENB		=93,
+	LFT_FPGA_trgr_stop				= 94,
+	LFT_FPGA_trgr_PlyBack_Strt_stop				= 95,
+	LFT_FPGA_Memory_Sel				= 96,
+	LFT_FPGA_trgr_PlyBack_Strt		=97,
+	LFT_FPGA_trgr_PlyBack_SSD_Strt_stop =98,
+	
+	
+
+
+
+
+};
+
+enum SPPUAttenuatorProp
+{
+	LFT_SPPU_ATTENUATOR_1           =   0,
+	LFT_SPPU_ATTENUATOR_2           =   1
+};
+
+enum SPPUDACProp
+{
+	LFT_SPPU_DAC_PROP_FIFO_STATE            =   0,
+	LFT_SPPU_DAC_PROP_FIFO_OFFSET           =   1,
+	LFT_SPPU_DAC_PROP_INPUT_SYNC            =   2,
+	LFT_SPPU_DAC_PROP_OUTPUT_SYNC           =   3,
+	LFT_SPPU_DAC_PROP_DATA_FORMATTER_SYNC   =   4,
+	LFT_SPPU_DAC_PROP_LVDS_DELAY_DATA       =   5,
+	LFT_SPPU_DAC_PROP_LVDS_DELAY_CLOCK      =   6,
+	LFT_SPPU_DAC_PROP_PLL_STATUS            =   7,
+	LFT_SPPU_DAC_PROP_LF_VOLTAGE            =   8,
+	LFT_SPPU_DAC_PROP_PLL_STATE             =   9,
+	LFT_SPPU_DAC_PROP_PLL_PRESCALER         =   10,
+	LFT_SPPU_DAC_PROP_PLL_VCO_BIAS_TUNE     =   11,
+	LFT_SPPU_DAC_PROP_PLL_CHARGE_PUMP       =   12,
+	LFT_SPPU_DAC_PROP_PLL_M                 =   13,
+	LFT_SPPU_DAC_PROP_PLL_N                 =   14,
+	LFT_SPPU_DAC_PROP_PLL_FREQ_TUNE         =   15,
+	LFT_SPPU_DAC_PROP_PLL_OUT_FREF          =   16,
+	LFT_SPPU_DAC_PROP_PLL_OUT_FDAC          =   17,
+	LFT_SPPU_DAC_PROP_PLL_OUT_FVCO          =   18,
+	LFT_SPPU_DAC_PROP_PLL_OUT_PFD           =   19,
+	LFT_SPPU_DAC_PROP_PLL_OUT_STABILITY     =   20,
+	LFT_SPPU_DAC_PROP_PLL_RESET             =   21,
+	LFT_SPPU_DAC_PROP_PLL_SLEEP             =   22,
+	LFT_SPPU_DAC_PROP_PLL_SYNC_DIVIDERS     =   23,
+	LFT_SPPU_DAC_PROP_PLL_BASE_OMPAMP_OFF   =   24,
+	LFT_SPPU_DAC_PROP_PLL_FUSE_SLEEP        =   25,
+	LFT_SPPU_DAC_PROP_DIGITAL_FILTERS       =   26,
+	LFT_SPPU_DAC_PROP_DIGITAL_MIXER_STATE   =   27,
+	LFT_SPPU_DAC_PROP_DIGITAL_MIXER         =   28,
+	LFT_SPPU_DAC_PROP_COMPENSATE_IQ         =   29,
+	LFT_SPPU_DAC_PROP_GROUP_DELAY_I         =   30,
+	LFT_SPPU_DAC_PROP_GROUP_DELAY_Q         =   31,
+	LFT_SPPU_DAC_PROP_CLOCK_RECEIVER_SLEEP  =   32,
+	LFT_SPPU_DAC_PROP_CLOCK_DIVIDER_SYNC    =   33,
+	LFT_SPPU_DAC_PROP_CLOCK_DIV_SYNC_SOURCE =   34,
+	LFT_SPPU_DAC_PROP_GAIN                  =   35,
+	LFT_SPPU_DAC_PROP_SIF_SYNC              =   36,
+	LFT_SPPU_DAC_PROP_QMC_CORRECT_STATE     =   37,
+	LFT_SPPU_DAC_PROP_QMC_GAIN_FIRST        =   38,
+	LFT_SPPU_DAC_PROP_QMC_GAIN_SECOND       =   39,
+	LFT_SPPU_DAC_PROP_QMC_PHASE             =   40,
+	LFT_SPPU_DAC_PROP_QMC_CORRECT_SYNC      =   41,
+	LFT_SPPU_DAC_PROP_QMC_SYNCAB            =   42,
+	LFT_SPPU_DAC_PROP_OFFSET_ADJUST         =   43,
+	LFT_SPPU_DAC_PROP_OFFSET_FIRST          =   44,
+	LFT_SPPU_DAC_PROP_OFFSET_SECOND         =   45,
+	LFT_SPPU_DAC_PROP_OFFSET_SYNC           =   46,
+	LFT_SPPU_DAC_PROP_NCO_STATE             =   47,
+	LFT_SPPU_DAC_PROP_NCO_F_SAMPLE          =   48,
+	LFT_SPPU_DAC_PROP_NCO_FREQ_AB           =   49,
+	LFT_SPPU_DAC_PROP_NCO_GAIN              =   50,
+	LFT_SPPU_DAC_PROP_NCO_ACC_SYNC          =   51,
+	LFT_SPPU_DAC_PROP_NCO_PHASE_OFFSET_AB   =   52,
+	LFT_SPPU_DAC_PROP_NCO_PHASE_OFFSET_CD   =   53,
+	LFT_SPPU_DAC_PROP_NCO_DDS_AB            =   54,
+	LFT_SPPU_DAC_PROP_NCO_MIXAB_SYNC        =   55,
+	LFT_SPPU_DAC_PROP_SLP_CTL_NOT_USED      =   56,
+	LFT_SPPU_DAC_PROP_SLP_CTL_DACI          =   57,
+	LFT_SPPU_DAC_PROP_SLP_CTL_DACQ          =   58,
+	LFT_SPPU_DAC_PROP_SLP_CTL_NOT_USED_2    =   59,
+	LFT_SPPU_DAC_PROP_SLP_CTL_CLK_RECEIVER  =   60,
+	LFT_SPPU_DAC_PROP_SLP_CTL_PLL           =   61,
+	LFT_SPPU_DAC_PROP_SLP_CTL_LVDS_DATA     =   62,
+	LFT_SPPU_DAC_PROP_SLP_CTL_LVDS_CONTROL  =   63,
+	LFT_SPPU_DAC_PROP_SLP_CTL_TEMP_SENSOR   =   64,
+	LFT_SPPU_DAC_PROP_SLP_CTL_FUSES         =   65,
+	LFT_SPPU_DAC_PROP_SLP_CTL_BIAS_OPAMP   =   66,
+	LFT_SPPU_DAC_PROP_ALARM_ZERO_CHECK      =   67,
+	LFT_SPPU_DAC_PROP_ALARM_NOT_USED        =   68,
+	LFT_SPPU_DAC_PROP_ALARM_FIFO_COLLISION  =   69,
+	LFT_SPPU_DAC_PROP_ALARM_FIFO_1_AWAY     =   70,
+	LFT_SPPU_DAC_PROP_ALARM_FIFO_2_AWAY     =   71,
+	LFT_SPPU_DAC_PROP_ALARM_DACCLK_GONE     =   72,
+	LFT_SPPU_DAC_PROP_ALARM_DCLK_GONE       =   73,
+	LFT_SPPU_DAC_PROP_ALARM_CLOCK_GONE      =   74,
+	LFT_SPPU_DAC_PROP_ALARM_IO_TEST         =   75,
+	LFT_SPPU_DAC_PROP_ALARM_OSTR_PATTERN    =   76,
+	LFT_SPPU_DAC_PROP_ALARM_PLL_LOCK        =   77,
+	LFT_SPPU_DAC_PROP_ALARM_PARITY_R_EDGE   =   78,
+	LFT_SPPU_DAC_PROP_ALARM_PARITY_F_EDGE   =   79,
+	LFT_SPPU_DAC_PROP_ALARM_BLOCK_PARITY    =   80,
+	LFT_SPPU_DAC_PROP_ALARM_NOT_USED_2      =   81,
+	LFT_SPPU_DAC_PROP_ALARM_NOT_USED_3      =   82,
+	LFT_SPPU_DAC_PROP_ALARM_ZERO_CHECK_STS  =   83,
+	LFT_SPPU_DAC_PROP_ALARM_NOT_USED_STS    =   84,
+	LFT_SPPU_DAC_PROP_ALARM_FIFO_COLLSN_STS =   85,
+	LFT_SPPU_DAC_PROP_ALARM_FIFO_1_AWAY_STS =   86,
+	LFT_SPPU_DAC_PROP_ALARM_FIFO_2_AWAY_STS =   87,
+	LFT_SPPU_DAC_PROP_ALARM_DACCLK_GONE_STS =   88,
+	LFT_SPPU_DAC_PROP_ALARM_DCLK_GONE_STS   =   89,
+	LFT_SPPU_DAC_PROP_ALARM_CLOCK_GONE_STS  =   90,
+	LFT_SPPU_DAC_PROP_ALARM_IO_TEST_STS     =   91,
+	LFT_SPPU_DAC_PROP_ALARM_OSTR_PTTRN_STS  =   92,
+	LFT_SPPU_DAC_PROP_ALARM_PLL_LOCK_STS    =   93,
+	LFT_SPPU_DAC_PROP_ALARM_PRTY_R_EDGE_STS =   94,
+	LFT_SPPU_DAC_PROP_ALARM_PRTY_F_EDGE_STS =   95,
+	LFT_SPPU_DAC_PROP_ALARM_BLOCK_PRTY_STS  =   96,
+	LFT_SPPU_DAC_PROP_ALARM_NOT_USED_2_STS  =   97,
+	LFT_SPPU_DAC_PROP_ALARM_NOT_USED_3_STS  =   98,
+	LFT_SPPU_DAC_PROP_IO_TEST_STATE         =   99,
+	LFT_SPPU_DAC_PROP_IO_TEST_PATTERN_0     =   100,
+	LFT_SPPU_DAC_PROP_IO_TEST_PATTERN_1     =   101,
+	LFT_SPPU_DAC_PROP_IO_TEST_PATTERN_2     =   102,
+	LFT_SPPU_DAC_PROP_IO_TEST_PATTERN_3     =   103,
+	LFT_SPPU_DAC_PROP_IO_TEST_PATTERN_4     =   104,
+	LFT_SPPU_DAC_PROP_IO_TEST_PATTERN_5     =   105,
+	LFT_SPPU_DAC_PROP_IO_TEST_PATTERN_6     =   106,
+	LFT_SPPU_DAC_PROP_IO_TEST_PATTERN_7     =   107,
+	LFT_SPPU_DAC_PROP_IO_TEST_RSLTS_LSB_1   =   108,
+	LFT_SPPU_DAC_PROP_IO_TEST_RSLTS_LSB_2   =   109,
+	LFT_SPPU_DAC_PROP_IO_TEST_RSLTS_LSB_3   =   110,
+	LFT_SPPU_DAC_PROP_IO_TEST_RSLTS_LSB_4   =   111,
+	LFT_SPPU_DAC_PROP_IO_TEST_RSLTS_LSB_5   =   112,
+	LFT_SPPU_DAC_PROP_IO_TEST_RSLTS_LSB_6   =   113,
+	LFT_SPPU_DAC_PROP_IO_TEST_RSLTS_LSB_7   =   114,
+	LFT_SPPU_DAC_PROP_IO_TEST_RSLTS_LSB_8   =   115,
+	LFT_SPPU_DAC_PROP_IO_TEST_RSLTS_LSB_9   =   116,
+	LFT_SPPU_DAC_PROP_IO_TEST_RSLTS_LSB_10  =   117,
+	LFT_SPPU_DAC_PROP_IO_TEST_RSLTS_LSB_11  =   118,
+	LFT_SPPU_DAC_PROP_IO_TEST_RSLTS_LSB_12  =   119,
+	LFT_SPPU_DAC_PROP_IO_TEST_RSLTS_LSB_13  =   120,
+	LFT_SPPU_DAC_PROP_IO_TEST_RSLTS_LSB_14  =   121,
+	LFT_SPPU_DAC_PROP_IO_TEST_RSLTS_LSB_15  =   122,
+	LFT_SPPU_DAC_PROP_IO_TEST_RSLTS_LSB_16  =   123
+};
+
+enum SPPULMKProp
+{
+	//General Sub Tab of LMK04806 Tab
+	LFT_SPPU_LMK_PROP_FEEDBACK_MUX_SOURCE       =   0,
+	LFT_SPPU_LMK_PROP_FEEDBACK_MUX_ENABLE       =   1,
+	LFT_SPPU_LMK_PROP_VCO_DIVIDER               =   2,
+	LFT_SPPU_LMK_PROP_VCO_MUX                   =   3,
+	LFT_SPPU_LMK_PROP_SYNC_TYPE                 =   4,
+	LFT_SPPU_LMK_PROP_SYNC_POLARITY             =   5,
+	LFT_SPPU_LMK_PROP_SYNC_MUX                  =   6,
+	LFT_SPPU_LMK_PROP_SYNC_ENABLE               =   7,
+	LFT_SPPU_LMK_PROP_SYNC_QUALIFICATION        =   8,
+	LFT_SPPU_LMK_PROP_SYNC_ENABLE_STATE         =   9,
+	LFT_SPPU_LMK_PROP_SYNC_01_STATE             =   10,
+	LFT_SPPU_LMK_PROP_SYNC_23_STATE             =   11,
+	LFT_SPPU_LMK_PROP_SYNC_45_STATE             =   12,
+	LFT_SPPU_LMK_PROP_SYNC_67_STATE             =   13,
+	LFT_SPPU_LMK_PROP_SYNC_89_STATE             =   14,
+	LFT_SPPU_LMK_PROP_SYNC_1011_STATE           =   15,
+	LFT_SPPU_LMK_PROP_HLDOVR_MODE               =   16,
+	LFT_SPPU_LMK_PROP_HLDOVR_DLD1_DET           =   17,
+	LFT_SPPU_LMK_PROP_HLDOVR_DLD_COUNT          =   18,
+	LFT_SPPU_LMK_PROP_HLDOVR_FORCE              =   19,
+	LFT_SPPU_LMK_PROP_STS_OUT_LD_TYPE           =   20,
+	LFT_SPPU_LMK_PROP_STS_OUT_LD_MUX            =   21,
+	LFT_SPPU_LMK_PROP_STS_OUT_HLDOVR_TYPE       =   22,
+	LFT_SPPU_LMK_PROP_STS_OUT_HLDOVR_MUX        =   23,
+	LFT_SPPU_LMK_PROP_XTAL_LVL                  =   24,
+	LFT_SPPU_LMK_PROP_LOS_TIMEOUT               =   25,
+	LFT_SPPU_LMK_PROP_EN_LOS                    =   26,
+	LFT_SPPU_LMK_PROP_OSCOUT_DIVIDER            =   27,
+	LFT_SPPU_LMK_PROP_OSCOUT_OSC1_AMP           =   28,
+	LFT_SPPU_LMK_PROP_OSCOUT_OSC0_TYPE          =   29,
+	LFT_SPPU_LMK_PROP_OSCOUT_OSC0_MUX           =   30,
+	LFT_SPPU_LMK_PROP_OSCOUT_OSC1_MUX           =   31,
+	LFT_SPPU_LMK_PROP_OSCOUT_EN_CLKIN0          =   32,
+	LFT_SPPU_LMK_PROP_OSCOUT_EN_CLKIN1          =   33,
+	LFT_SPPU_LMK_PROP_OSCOUT_SWITCH_OFF         =   34,
+
+	//LMK Sub Tab of LMK04806 Tab
+	LFT_SPPU_LMK_PROP_CLK_01_DIVIDER            =   35,
+	LFT_SPPU_LMK_PROP_CLK_01_DELAY              =   36,
+	LFT_SPPU_LMK_PROP_CLK_01_CLK0_TYPE          =   37,
+	LFT_SPPU_LMK_PROP_CLK_01_CLK1_TYPE          =   38,
+	LFT_SPPU_LMK_PROP_CLK_01_ANALOG_DELAY       =   39,
+	LFT_SPPU_LMK_PROP_CLK_01_ANALOG_DELAY_SEL   =   40,
+	LFT_SPPU_LMK_PROP_CLK_01_DD_HALF_SHIFT      =   41,
+	LFT_SPPU_LMK_PROP_CLK_01_SWITCH_OFF         =   42,
+	LFT_SPPU_LMK_PROP_CLK_23_DIVIDER            =   43,
+	LFT_SPPU_LMK_PROP_CLK_23_DELAY              =   44,
+	LFT_SPPU_LMK_PROP_CLK_23_CLK0_TYPE          =   45,
+	LFT_SPPU_LMK_PROP_CLK_23_CLK1_TYPE          =   46,
+	LFT_SPPU_LMK_PROP_CLK_23_ANALOG_DELAY       =   47,
+	LFT_SPPU_LMK_PROP_CLK_23_ANALOG_DELAY_SEL   =   48,
+	LFT_SPPU_LMK_PROP_CLK_23_DD_HALF_SHIFT      =   49,
+	LFT_SPPU_LMK_PROP_CLK_23_SWITCH_OFF         =   50,
+	LFT_SPPU_LMK_PROP_CLK_45_DIVIDER            =   51,
+	LFT_SPPU_LMK_PROP_CLK_45_DELAY              =   52,
+	LFT_SPPU_LMK_PROP_CLK_45_CLK0_TYPE          =   53,
+	LFT_SPPU_LMK_PROP_CLK_45_CLK1_TYPE          =   54,
+	LFT_SPPU_LMK_PROP_CLK_45_ANALOG_DELAY       =   55,
+	LFT_SPPU_LMK_PROP_CLK_45_ANALOG_DELAY_SEL   =   56,
+	LFT_SPPU_LMK_PROP_CLK_45_DD_HALF_SHIFT      =   57,
+	LFT_SPPU_LMK_PROP_CLK_45_SWITCH_OFF         =   58,
+	LFT_SPPU_LMK_PROP_CLK_67_DIVIDER            =   59,
+	LFT_SPPU_LMK_PROP_CLK_67_DELAY              =   60,
+	LFT_SPPU_LMK_PROP_CLK_67_CLK0_TYPE          =   61,
+	LFT_SPPU_LMK_PROP_CLK_67_CLK1_TYPE          =   62,
+	LFT_SPPU_LMK_PROP_CLK_67_ANALOG_DELAY       =   63,
+	LFT_SPPU_LMK_PROP_CLK_67_ANALOG_DELAY_SEL   =   64,
+	LFT_SPPU_LMK_PROP_CLK_67_DD_HALF_SHIFT      =   65,
+	LFT_SPPU_LMK_PROP_CLK_67_SWITCH_OFF         =   66,
+	LFT_SPPU_LMK_PROP_CLK_89_DIVIDER            =   67,
+	LFT_SPPU_LMK_PROP_CLK_89_DELAY              =   68,
+	LFT_SPPU_LMK_PROP_CLK_89_CLK0_TYPE          =   69,
+	LFT_SPPU_LMK_PROP_CLK_89_CLK1_TYPE          =   70,
+	LFT_SPPU_LMK_PROP_CLK_89_ANALOG_DELAY       =   71,
+	LFT_SPPU_LMK_PROP_CLK_89_ANALOG_DELAY_SEL   =   72,
+	LFT_SPPU_LMK_PROP_CLK_89_DD_HALF_SHIFT      =   73,
+	LFT_SPPU_LMK_PROP_CLK_89_SWITCH_OFF         =   74,
+	LFT_SPPU_LMK_PROP_CLK_1011_DIVIDER          =   75,
+	LFT_SPPU_LMK_PROP_CLK_1011_DELAY            =   76,
+	LFT_SPPU_LMK_PROP_CLK_1011_CLK0_TYPE        =   77,
+	LFT_SPPU_LMK_PROP_CLK_1011_CLK1_TYPE        =   78,
+	LFT_SPPU_LMK_PROP_CLK_1011_ANALOG_DELAY     =   79,
+	LFT_SPPU_LMK_PROP_CLK_1011_ANALOG_DELAY_SEL =   80,
+	LFT_SPPU_LMK_PROP_CLK_1011_DD_HALF_SHIFT    =   81,
+	LFT_SPPU_LMK_PROP_CLK_1011_SWITCH_OFF       =   82,
+
+
+	//PLL Sub Tab of LMK04806 Tab
+	LFT_SPPU_LMK_PROP_PLL_EN_CLKIN0             =   83,
+	LFT_SPPU_LMK_PROP_PLL_EN_CLKIN1             =   84,
+	LFT_SPPU_LMK_PROP_PLL_CLIN_SEL_INV          =   85,
+	LFT_SPPU_LMK_PROP_PLL_CLKIN_SEL_MODE        =   86,
+	LFT_SPPU_LMK_PROP_PLL_CLIN0_MUX             =   87,
+	LFT_SPPU_LMK_PROP_PLL_CLIN1_MUX             =   88,
+	LFT_SPPU_LMK_PROP_PLL_CLKIN0_TYPE           =   89,
+	LFT_SPPU_LMK_PROP_PLL_CKLIN0_TYPE_2         =   90,
+	LFT_SPPU_LMK_PROP_PLL_BUF_TYPE0             =   91,
+	LFT_SPPU_LMK_PROP_PLL_BUF_TYPE1             =   92,
+	LFT_SPPU_LMK_PROP_PLL_CLKIN0_DIV            =   93,
+	LFT_SPPU_LMK_PROP_PLL_CLKIN1_DIV            =   94,
+	LFT_SPPU_LMK_PROP_PLL_WND_SIZE              =   95,
+	LFT_SPPU_LMK_PROP_PLL_R_DLY                 =   96,
+	LFT_SPPU_LMK_PROP_PLL_N_DLY2                =   97,
+	LFT_SPPU_LMK_PROP_PLL_DLD_CNT               =   98,
+	LFT_SPPU_LMK_PROP_PLL_SYNC_DLD              =   99,
+	LFT_SPPU_LMK_PROP_PLL_REF_DIVIDER           =   100,
+	LFT_SPPU_LMK_PROP_PLL_N_DIVIDER             =   101,
+	LFT_SPPU_LMK_PROP_PLL_CHARGE_PUMP_STATE     =   102,
+	LFT_SPPU_LMK_PROP_PLL_CHARGE_PUMP_GAIN      =   103,
+	LFT_SPPU_LMK_PROP_PLL_CHARGE_PUMP_POLARITY  =   104,
+	LFT_SPPU_LMK_PROP_PLL2_XTAL_OCS             =   105,
+	LFT_SPPU_LMK_PROP_PLL2_SYNC_DLD             =   106,
+	LFT_SPPU_LMK_PROP_PLL2_DLD_CNT              =   107,
+	LFT_SPPU_LMK_PROP_PLL2_WND_SIZE             =   108,
+	LFT_SPPU_LMK_PROP_PLL2_REF_DIVIDER          =   109,
+	LFT_SPPU_LMK_PROP_PLL2_N_CAL                =   110,
+	LFT_SPPU_LMK_PROP_PLL2_N_DIVIDER            =   111,
+	LFT_SPPU_LMK_PROP_PLL2_PRESCALAR            =   112,
+	LFT_SPPU_LMK_PROP_PLL2_INPUT_FREQ           =   113,
+	LFT_SPPU_LMK_PROP_PLL2_2X_REF               =   114,
+	LFT_SPPU_LMK_PROP_PLL2_FAST_PDF             =   115,
+	LFT_SPPU_LMK_PROP_PLL2_R3                   =   116,
+	LFT_SPPU_LMK_PROP_PLL2_C3                   =   117,
+	LFT_SPPU_LMK_PROP_PLL2_R4                   =   118,
+	LFT_SPPU_LMK_PROP_PLL2_C4                   =   119,
+	LFT_SPPU_LMK_PROP_PLL2_CHARGE_PUMP_STATE    =   120,
+	LFT_SPPU_LMK_PROP_PLL2_CHARGE_PUMP_GAIN     =   121,
+	LFT_SPPU_LMK_PROP_PLL2_CHARGE_PUMP_POLARITY =   122
+
+};
+enum SPPUFPGAOPMode
+{
+	LFT_SPPU_OP_MODE_RF = 0,
+	LFT_SPPU_OP_MODE_IF = 1
+};
+enum SPPUDataType
+{
+	LFT_SPPU_DATA_TYPE_IQ_DC1       =   0,
+	LFT_SPPU_DATA_TYPE_IQ_DC2       =   1,
+	LFT_SPPU_DATA_TYPE_RF           =   2,
+	LFT_SPPU_SAVE_FPGA_REGS_SD_CARD	=	3
+};
+
+//General Tab - Interpolation Combobox
+enum SPPUFPGAPropInterpolation
+{
+	LFT_SPPU_FPGA_PROP_INTRPLTN_ZOOM_2   =    0,
+	LFT_SPPU_FPGA_PROP_INTRPLTN_ZOOM_4   =    1,
+	LFT_SPPU_FPGA_PROP_INTRPLTN_ZOOM_8   =    2
+};
+
+enum SPPUFPGAPropAmplitude
+{  
+	LFT_SPPU_FPGA_PROP_MINUS_27   =     0,
+	LFT_SPPU_FPGA_PROP_MINUS_26   =     1,
+	LFT_SPPU_FPGA_PROP_MINUS_25   =     2, 
+	LFT_SPPU_FPGA_PROP_MINUS_24   =     3,
+	LFT_SPPU_FPGA_PROP_MINUS_23   =     4,
+	LFT_SPPU_FPGA_PROP_MINUS_22   =     5,
+	LFT_SPPU_FPGA_PROP_MINUS_21   =     6,
+	LFT_SPPU_FPGA_PROP_MINUS_20   =     7,
+	LFT_SPPU_FPGA_PROP_MINUS_19   =     8,
+	LFT_SPPU_FPGA_PROP_MINUS_18   =     9,
+	LFT_SPPU_FPGA_PROP_MINUS_17   =     10,
+	LFT_SPPU_FPGA_PROP_MINUS_16   =     11,
+	LFT_SPPU_FPGA_PROP_MINUS_15   =     12,
+	LFT_SPPU_FPGA_PROP_MINUS_14   =     13,
+	LFT_SPPU_FPGA_PROP_MINUS_13   =     14,
+	LFT_SPPU_FPGA_PROP_MINUS_12   =     15,
+	LFT_SPPU_FPGA_PROP_MINUS_11   =     16,
+	LFT_SPPU_FPGA_PROP_MINUS_10   =     17,
+	LFT_SPPU_FPGA_PROP_MINUS_9    =     18,
+	LFT_SPPU_FPGA_PROP_MINUS_8    =     19,
+	LFT_SPPU_FPGA_PROP_MINUS_7    =     20,
+	LFT_SPPU_FPGA_PROP_MINUS_6    =     21,
+	LFT_SPPU_FPGA_PROP_MINUS_5    =     22,
+	LFT_SPPU_FPGA_PROP_MINUS_4    =     23,
+	LFT_SPPU_FPGA_PROP_MINUS_3    =     24,
+	LFT_SPPU_FPGA_PROP_MINUS_2    =     25,
+	LFT_SPPU_FPGA_PROP_MINUS_1    =     26,
+	LFT_SPPU_FPGA_PROP_0    =     27,
+	LFT_SPPU_FPGA_PROP_1    =     28,
+	LFT_SPPU_FPGA_PROP_2	=     29,
+	LFT_SPPU_FPGA_PROP_3    =     30,
+	LFT_SPPU_FPGA_PROP_4    =     31,
+	LFT_SPPU_FPGA_PROP_5    =     32,
+	LFT_SPPU_FPGA_PROP_6    =     33
+};
+
+enum SPPUFPGAPropAmplitudeIF
+{ 
+	LFT_SPPU_FPGA_PROP_IF_MINUS_27   =     0,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_26   =     1,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_25   =     2, 
+	LFT_SPPU_FPGA_PROP_IF_MINUS_24   =     3,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_23   =     4,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_22   =     5,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_21   =     6,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_20   =     7,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_19   =     8,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_18   =     9,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_17   =     10,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_16   =     11,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_15   =     12,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_14   =     13,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_13   =     14,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_12   =     15,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_11   =     16,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_10   =     17,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_9    =     18,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_8    =     19,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_7    =     20,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_6    =     21,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_5    =     22,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_4    =     23,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_3    =     24,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_2    =     25,
+	LFT_SPPU_FPGA_PROP_IF_MINUS_1    =     26,
+	LFT_SPPU_FPGA_PROP_IF_0    =     27
+
+
+};
+//General Tab - Clock Source Combobox
+enum SPPUFPGAClockSource
+{
+	LFT_SPPU_FPGA_PROP_CLOCK_SOURCE_INTERNAL    =   0,
+	LFT_SPPU_FPGA_PROP_CLOCK_SOURCE_EXTERNAL    =   1
+};
+
+
+//Input Tab - FIFO Combobox & LMK Tab - Holdover_Mode Combobox
+enum SPPUState
+{
+	LFT_SPPU_STATE_DISABLE          =   0,
+	LFT_SPPU_STATE_ENABLE           =   1
+};
+
+
+//Input Tab - FIFO Offset Combobox
+enum SPPUDACPropFIFO
+{
+	LFT_SPPU_DAC_PROP_FIFO_OFFSET_0    =   0,
+	LFT_SPPU_DAC_PROP_FIFO_OFFSET_1    =   1,
+	LFT_SPPU_DAC_PROP_FIFO_OFFSET_2    =   2,
+	LFT_SPPU_DAC_PROP_FIFO_OFFSET_3    =   3,
+	LFT_SPPU_DAC_PROP_FIFO_OFFSET_4    =   4,
+	LFT_SPPU_DAC_PROP_FIFO_OFFSET_5    =   5,
+	LFT_SPPU_DAC_PROP_FIFO_OFFSET_6    =   6,
+	LFT_SPPU_DAC_PROP_FIFO_OFFSET_7    =   7
+};
+
+//Input Tab - FIFO Input Sync
+enum SPPUDACPropFIFOInputSync
+{
+	LFT_SPPU_DAC_PROP_FIFO_INPUT_NONE  =   0,
+	LFT_SPPU_DAC_PROP_FIFO_INPUT_SYNC  =   1,
+	LFT_SPPU_DAC_PROP_FIFO_INPUT_FRAME =   2,
+	LFT_SPPU_DAC_PROP_FIFO_SIF_SYNC    =   3,
+};
+
+//Input Tab - FIFO Output Sync
+enum SPPUDACPropFIFOOutputSync
+{
+	LFT_SPPU_DAC_PROP_FIFO_OUTPUT_SYNC      =   0,
+	LFT_SPPU_DAC_PROP_FIFO_OUTPUT_FRAME     =   1,
+	LFT_SPPU_DAC_PROP_FIFO_OUTPUT_OSTR      =   2,
+	LFT_SPPU_DAC_PROP_FIFO_OUTPUT_SIF_SYNC  =   3
+};
+
+
+//Input Tab - Data Foramtter Sync Combobox
+enum SPPUDACPropDataFormatterSync
+{
+	LFT_SPPU_DAC_PROP_FIFO_DATA_FORMATTER_NONE  =   0,
+	LFT_SPPU_DAC_PROP_FIFO_DATA_FORMATTER_SYNC  =   1,
+	LFT_SPPU_DAC_PROP_FIFO_DATA_FORMATTER_FRAME =   2
+};
+
+//Input Tab - LVDS Delays (both Data & Clock Combobox for all DACs)
+enum SPPUDACPropLVDSDelay
+{
+	LFT_SPPU_DAC_PROP_LVDS_DELAY_0      =   0,
+	LFT_SPPU_DAC_PROP_LVDS_DELAY_40     =   1,
+	LFT_SPPU_DAC_PROP_LVDS_DELAY_80     =   2,
+	LFT_SPPU_DAC_PROP_LVDS_DELAY_120    =   3,
+	LFT_SPPU_DAC_PROP_LVDS_DELAY_160    =   4,
+	LFT_SPPU_DAC_PROP_LVDS_DELAY_200    =   5,
+	LFT_SPPU_DAC_PROP_LVDS_DELAY_240    =   6,
+	LFT_SPPU_DAC_PROP_LVDS_DELAY_280    =   7
+};
+
+//Input Tab - Charge Pump Combobox
+enum SPPUDACPropChargePump
+{
+	LFT_SPPU_DAC_PROP_CHRG_PMP_NONE     =   0,
+	LFT_SPPU_DAC_PROP_CHRG_PMP_SIGNLE   =   1,
+	LFT_SPPU_DAC_PROP_CHRG_PMP_DOUBLE   =   2
+};
+
+//Digital Tab - Interpolation Combobox
+enum SPPUDACPropInterpolation
+{
+	LFT_SPPU_DAC_PROP_INTRPLTN_ZOOM_1   =    1,
+	LFT_SPPU_DAC_PROP_INTRPLTN_ZOOM_2   =    2,
+	LFT_SPPU_DAC_PROP_INTRPLTN_ZOOM_4   =    3,
+	LFT_SPPU_DAC_PROP_INTRPLTN_ZOOM_8   =    4,
+	LFT_SPPU_DAC_PROP_INTRPLTN_ZOOM_16  =    5
+};
+
+//Digital Tab - Mixer Combobox
+enum SPPUDACPropDigitalMixer
+{
+	LFT_SPPU_DAC_PROP_MIXER_BYPASS      =   0,
+	LFT_SPPU_DAC_PROP_MIXER_MINUSFSBY4  =   1,
+	LFT_SPPU_DAC_PROP_MIXER_FSBY2       =   2,
+	LFT_SPPU_DAC_PROP_MIXER_FSBY4       =   3,
+	LFT_SPPU_DAC_PROP_MIXER_FSBY8       =   4,
+	LFT_SPPU_DAC_PROP_MIXER_3FSBY8      =   5,
+	LFT_SPPU_DAC_PROP_MIXER_5FSBY8      =   6,
+	LFT_SPPU_DAC_PROP_MIXER_7FSBY8      =   7
+};
+
+//Digital Tab - Clock Div Sync Source Combobox
+enum SPPUDACPropClockDivSync
+{
+	LFT_SPPU_DAC_PROP_CLK_DIV_SYNC_OSTR  =   0,
+	LFT_SPPU_DAC_PROP_CLK_DIV_SYNC_FRAME =   1
+};
+
+//Digital Tab - Correct Sync, Offset Sync and MixAB Sync comboboxes
+enum SPPUDACPropSync
+{
+	LFT_SPPU_DAC_PROP_SYNC_REGWR   =   0,
+	LFT_SPPU_DAC_PROP_SYNC_OSTR    =   1,
+	LFT_SPPU_DAC_PROP_SYNC_SYNC    =   2,
+	LFT_SPPU_DAC_PROP_SYNC_SIFSYNC =   3
+};
+
+//Digital Tab - NCO Acc Sync Comboboxes
+enum SPPUDACPropNCOAccSync
+{
+	LFT_SPPU_DAC_PROP_NCO_SYNC_BYPASS   =   0,
+	LFT_SPPU_DAC_PROP_NCO_SYNC_FRAME    =   1,
+	LFT_SPPU_DAC_PROP_NCO_SYNC_OSTR     =   2,
+	LFT_SPPU_DAC_PROP_NCO_SYNC_SYNC     =   3,
+	LFT_SPPU_DAC_PROP_NCO_SYNC_SIF_SYNC =   4
+};
+
+//Digital Tab - NCO Gain
+enum SPPUDACPropNCOGain
+{
+	LFT_SPPU_DAC_PROP_NCO_GAIN_0DB      =   0,
+	LFT_SPPU_DAC_PROP_NCO_GAIN_6DB      =   1
+};
+
+//LMK04806 - General Sub Tab, Source Combobox
+enum SPPULMKPropFeedbackMuxSource
+{
+	LFT_SPPU_LMK_PROP_FDBCK_MUX_SOURCE_CLK_OUT_0             =   0,
+	LFT_SPPU_LMK_PROP_FDBCK_MUX_SOURCE_CLK_OUT_2             =   1,
+	LFT_SPPU_LMK_PROP_FDBCK_MUX_SOURCE_CLK_OUT_4             =   2,
+	LFT_SPPU_LMK_PROP_FDBCK_MUX_SOURCE_CLK_OUT_6             =   3,
+	LFT_SPPU_LMK_PROP_FDBCK_MUX_SOURCE_CLK_OUT_8             =   4,
+	LFT_SPPU_LMK_PROP_FDBCK_MUX_SOURCE_CLK_OUT_10            =   5,
+	LFT_SPPU_LMK_PROP_FDBCK_MUX_SOURCE_CLK                   =   6
+};
+
+
+//LMK04806 - General Sub Tab, VCO Mux Combobox
+enum SPPULMKPropVCOMux
+{
+	LFT_SPPU_LMK_PROP_VCO_MUX_SELECTED                       =   0,
+	LFT_SPPU_LMK_PROP_VCO_MUX_DIVIDER                        =   1
+};
+
+//LMK04806 - General Sub Tab, Type Combobox
+enum SPPULMKPropSYNCMux
+{
+	LFT_SPPU_LMK_PROP_SYNC_MUX_LOGIC_LOW                     =  0,
+	LFT_SPPU_LMK_PROP_SYNC_MUX_UWIRE_READBACK                =  1
+};
+
+//LMK04806 - General Sub Tab, Enable Combobox
+enum SPPULMKPropSyncEnable
+{
+	LFT_SPPU_LMK_PROP_SYNC_ENABLE_MANUAL                    =   0,
+	LFT_SPPU_LMK_PROP_SYNC_ENABLE_INTERNALLY_GENERATED      =   1
+};
+
+//LMK04806 - General Sub Tab, Qualification Combobox
+enum SPPULMKPropSYNCQualification
+{
+	LFT_SPPU_LMK_PROP_SYNC_QUALIFICATION_NO                 =   0,
+	LFT_SPPU_LMK_PROP_SYNC_QUALIFICATION_BY_CLOCK_OUTPUT    =   1
+};
+
+//LMK04806 - General Sub Tab, Disable_DLD1_DET Combobox
+enum SPPULMKPropHoldoverDisable
+{
+	LFT_SPPU_LMK_PROP_HOLDOVER_DISABLE_CAUSES_CLK_SWTCH_EV  =   0,
+	LFT_SPPU_LMK_PROP_HOLDOVER_DISABLE_NO_CLK_SWTCH_EV      =   1
+};
+
+//LMK04806 - General Sub Tab, LD_TYPE Combobox & Holdover Type Combobox
+enum SPPULMKPropTypeSubOutput
+{
+	LFT_SPPU_LMK_PROP_SUB_OUTPUT                      =   0,
+	LFT_SPPU_LMK_PROP_SUB_OUTPUT_INVERTED             =   1,
+	LFT_SPPU_LMK_PROP_SUB_OUTPUT_OPEN_SOURCE          =   2,
+	LFT_SPPU_LMK_PROP_SUB_OPEN_DRAIN                  =   3
+};
+
+//LMK04806 - General Sub Tab, LD_MUX Combobox & Holdover_Mux Combobox
+enum SPPUMLMKPropMUX
+{
+	LFT_SPPU_LMK_PROP_LDMUX_LOGIC_LOW               =   0,
+	LFT_SPPU_LMK_PROP_LDMUX_PLL1DLD                 =   1,
+	LFT_SPPU_LMK_PROP_LDMUX_PLL2DLD                 =   2,
+	LFT_SPPU_LMK_PROP_LDMUX_PLL1DLD_N_PLL2DLD       =   3,
+	LFT_SPPU_LMK_PROP_LDMUX_HODLOVER_STATUS         =   4,
+	LFT_SPPU_LMK_PROP_LDMUX_DAC_LOCKED              =   5,
+	LFT_SPPU_LMK_PROP_LDMUX_UWIRE_READBACK          =   6,
+	LFT_SPPU_LMK_PROP_LDMUX_DAC_RAIL                =   7,
+	LFT_SPPU_LMK_PROP_LDMUX_DAC_LOW                 =   8,
+	LFT_SPPU_LMK_PROP_LDMUX_DAC_HIGH                =   9,
+	LFT_SPPU_LMK_PROP_LDMUX_DAC_PLL1_N              =   10,
+	LFT_SPPU_LMK_PROP_LDMUX_DAC_PLL1_N_BY_2         =   11,
+	LFT_SPPU_LMK_PROP_LDMUX_DAC_PLL2_N              =   12,
+	LFT_SPPU_LMK_PROP_LDMUX_DAC_PLL2_N_BY_2         =   13,
+	LFT_SPPU_LMK_PROP_LDMUX_DAC_PLL1_R              =   14,
+	LFT_SPPU_LMK_PROP_LDMUX_DAC_PLL1_R_BY_2         =   15,
+	LFT_SPPU_LMK_PROP_LDMUX_DAC_PLL2_R              =   16,
+	LFT_SPPU_LMK_PROP_LDMUX_DAC_PLL2_R_BY_2         =   17
+};
+
+//LMK04806 - General Sub Tab, XTAL_LVL Combobox
+enum SPPULMKXTALLVL
+{
+	LFT_SPPU_LMK_PROP_XTAL_LVL_DATA_1               =   0,
+	LFT_SPPU_LMK_PROP_XTAL_LVL_DATA_2               =   1,
+	LFT_SPPU_LMK_PROP_XTAL_LVL_DATA_3               =   2,
+	LFT_SPPU_LMK_PROP_XTAL_LVL_DATA_4               =   3
+};
+
+//LMK04806 - General Sub Tab, LOS_TIMEOUT Combobox
+enum SPPULMKLOSTimeout
+{
+	LFT_SPPU_LMK_PROP_LOS_TIMEOUT_DATA_1             =   0,
+	LFT_SPPU_LMK_PROP_LOS_TIMEOUT_DATA_2             =   1,
+	LFT_SPPU_LMK_PROP_LOS_TIMEOUT_DATA_3             =   2,
+	LFT_SPPU_LMK_PROP_LOS_TIMEOUT_DATA_4             =   3
+};
+
+//LMK04806 Tab - General Sub Tab, OSCout Divider & VCO Divider
+//LMK04806 Tab - PLL Sub Tab, PLL2 Group Box, Prescalar Combobox
+enum SPPULMKPropDivider
+{
+	LFT_SPPU_LMK_PROP_DIVIDER_2                    =   0,
+	LFT_SPPU_LMK_PROP_DIVIDER_3                    =   1,
+	LFT_SPPU_LMK_PROP_DIVIDER_4                    =   2,
+	LFT_SPPU_LMK_PROP_DIVIDER_5                    =   3,
+	LFT_SPPU_LMK_PROP_DIVIDER_6                    =   4,
+	LFT_SPPU_LMK_PROP_DIVIDER_7                    =   5,
+	LFT_SPPU_LMK_PROP_DIVIDER_8                    =   6
+};
+
+//LMK04806 Tab - General Sub Tab, OSC1 Amp Combobox
+enum SPPULMKPropOSCoutAmp
+{
+	LFT_SPPU_LMK_PROP_OSCOUT_AMP_700                         =   0,
+	LFT_SPPU_LMK_PROP_OSCOUT_AMP_1200                        =   1,
+	LFT_SPPU_LMK_PROP_OSCOUT_AMP_1600                        =   2,
+	LFT_SPPU_LMK_PROP_OSCOUT_AMP_2000                        =   3
+};
+
+//LMK04806 Tab - General Sub Tab, OSC0 & OSC1 Mux Combobox
+enum SPPULMKPropOSCoutMux
+{
+	LFT_SPPU_LMK_PROP_OSCOUT_MUX_BYPASS_DIVIDER              =   0,
+	LFT_SPPU_LMK_PROP_OSCOUT_MUX_DIVIDE                      =   1
+};
+
+//LMK04806 Tab - All DAC CLK Types and OSC0 Type Comboboxes
+enum SPPULMKPropClockType
+{
+	LFT_SPPU_LMK_PROP_CLK_TY_OFF                    =   0,
+	LFT_SPPU_LMK_PROP_CLK_TY_LVDS                   =   1,
+	LFT_SPPU_LMK_PROP_CLK_TY_LVPECL_700             =   2,
+	LFT_SPPU_LMK_PROP_CLK_TY_LVPECL_1200            =   3,
+	LFT_SPPU_LMK_PROP_CLK_TY_LVPECL_1600            =   4,
+	LFT_SPPU_LMK_PROP_CLK_TY_LVPECL_2000            =   5,
+	LFT_SPPU_LMK_PROP_CLK_TY_LVCMOS_NORM_OR_INV     =   6,
+	LFT_SPPU_LMK_PROP_CLK_TY_LVCMOS_INV_OR_NORM     =   7,
+	LFT_SPPU_LMK_PROP_CLK_TY_LVCMOS_NORM_OR_NORM    =   8,
+	LFT_SPPU_LMK_PROP_CLK_TY_LVCMOS_INV_OR_INV      =   9,
+	LFT_SPPU_LMK_PROP_CLK_TY_LVCMOS_LOW_OR_NORM     =   10,
+	LFT_SPPU_LMK_PROP_CLK_TY_LVCMOS_LOW_OR_INV      =   11,
+	LFT_SPPU_LMK_PROP_CLK_TY_LVCMOS_NORM_OR_LOW     =   12,
+	LFT_SPPU_LMK_PROP_CLK_TY_LVCMOS_INV_OR_LOW      =   13,
+	LFT_SPPU_LMK_PROP_CLK_TY_LVCMOS_LOW_OR_LOW      =   14
+};
+//Selection of dac for default settings
+enum SPPUDACType
+{
+	LFT_SPPU_DAC_1 = 0,
+	LFT_SPPU_DAC_2 = 1,
+	LFT_SPPU_DAC_3 = 2,
+};
+
+
+
+//LMK04806 Tab - LMK Sub Tab, Analog Delay Sel all combo boxes
+enum SPPUAnalogDelaySel
+{
+	LFT_SPPU_LMK_PROP_ANLG_DLY_SEL_OFF              =   0,
+	LFT_SPPU_LMK_PROP_ANLG_DLY_SEL_ODD_CLK_ONLY     =   1,
+	LFT_SPPU_LMK_PROP_ANLG_DLY_SEL_EVEN_CLK_ONLY    =   2,
+	LFT_SPPU_LMK_PROP_ANLG_DLY_SEL_BOTH_CLKS        =   3
+};
+
+//LMK04806 Tab - CLKin_Sel_INV Combobox & SYNC Groupbox Polarity Combobox
+enum SPPULMKPropState
+{
+	LFT_SPPU_LMK_PROP_ACTIVE_LOW      =   0,
+	LFT_SPPU_LMK_PROP_ACTIVE_HIGH     =   1
+};
+
+//LMK04806 Tab - CLKin_Sel_Mode Combobox
+enum SPPULMKPropClockInSelMode
+{
+	LFT_SPPU_LMK_PROP_CLK_SEL_MODE_CLK_IN_0          =   0,
+	LFT_SPPU_LMK_PROP_CLK_SEL_MODE_CLK_IN_1          =   1,
+	LFT_SPPU_LMK_PROP_CLK_SEL_MODE_PIN_SEL_MODE      =   2,
+	LFT_SPPU_LMK_PROP_CLK_SEL_MODE_AUTO_MODE         =   3,
+	LFT_SPPU_LMK_PROP_CLK_SEL_MODE_AUTO_MODE_NXT_PIN =   4
+};
+
+//LMK04806 Tab - CLKin0 Mux & CLKin1 Mux Combobox
+enum SPPULMKPropClockInMux
+{
+	LFT_SPPU_LMK_PROP_CLK_MUX_LOGIC_LOW               =   0,
+	LFT_SPPU_LMK_PROP_CLK_MUX_CLK_IN_0LOS             =   1,
+	LFT_SPPU_LMK_PROP_CLK_MUX_CLK_IN_0_SELECTED       =   2,
+	LFT_SPPU_LMK_PROP_CLK_MUX_DAC_LOCKED              =   3,
+	LFT_SPPU_LMK_PROP_CLK_MUX_DAC_LOW                 =   4,
+	LFT_SPPU_LMK_PROP_CLK_MUX_DAC_HIGH                =   5,
+	LFT_SPPU_LMK_PROP_CLK_MUX_UWIRE_READBACK          =   6
+};
+
+//LMK04806 Tab - BUF_TYPE0 & BUF_TYPE1 Combobox
+enum SPPULMKPropBufType
+{
+	LFT_SPPU_LMK_PROP_BUFF_TYPE_BIPOLAR               =   1,
+	LFT_SPPU_LMK_PROP_BUFF_TYPE_CMOS                  =   2
+};
+
+//LMK04806 Tab - CLKin0Div & CLKin1Div Combobox
+enum SPPULMKPropClockInDiv
+{
+	LFT_SPPU_LMK_PROP_CLK_IN_DIV_1  =   1,
+	LFT_SPPU_LMK_PROP_CLK_IN_DIV_2  =   2,
+	LFT_SPPU_LMK_PROP_CLK_IN_DIV_4  =   3,
+	LFT_SPPU_LMK_PROP_CLK_IN_DIV_8  =   4
+};
+
+//LMK04806 Tab - Input Settings Groupbox CLKin0 Type Comboboxes (There are two) & Sync Groupbox - Type Combobox
+enum SPPULMKPropType
+{
+	LFT_SPPU_LMK_PROP_INPUT                       =   0,
+	LFT_SPPU_LMK_PROP_INPUT_W_PULLUP_RESISTOR     =   1,
+	LFT_SPPU_LMK_PROP_INPUT_W_PULLDOWN_RESISTOR   =   2,
+	LFT_SPPU_LMK_PROP_OUTPUT                      =   3,
+	LFT_SPPU_LMK_PROP_OUTPUT_INVERTED             =   4,
+	LFT_SPPU_LMK_PROP_OUTPUT_OPEN_SOURCE          =   5,
+	LFT_SPPU_LMK_PROP_OPEN_DRAIN                  =   6
+};
+
+//LMK04806 Tab - PLL_WND_SIZE Combobox
+enum SPPULMKPropPLLWNDSize
+{
+	LFT_SPPU_LMK_PROP_PLL_WND_SZ_DATA1                    =   0,
+	LFT_SPPU_LMK_PROP_PLL_WND_SZ_DATA2                    =   1,
+	LFT_SPPU_LMK_PROP_PLL_WND_SZ_DATA3                    =   2,
+	LFT_SPPU_LMK_PROP_PLL_WND_SZ_DATA4                    =   3
+
+};
+
+//LMK04806 Tab - PLL_R_DLY and PLL_N_DLY2 Comboboxes
+enum SPPULMKPropPLLDLY
+{
+	LFT_SPPU_LMK_PROP_PLL_DLY_0                           =   0,
+	LFT_SPPU_LMK_PROP_PLL_DLY_205                         =   1,
+	LFT_SPPU_LMK_PROP_PLL_DLY_410                         =   2,
+	LFT_SPPU_LMK_PROP_PLL_DLY_615                         =   3,
+	LFT_SPPU_LMK_PROP_PLL_DLY_820                         =   4,
+	LFT_SPPU_LMK_PROP_PLL_DLY_1025                        =   5,
+	LFT_SPPU_LMK_PROP_PLL_DLY_1230                        =   6,
+	LFT_SPPU_LMK_PROP_PLL_DLY_1485                        =   7
+};
+
+//LMK04806 Tab - Charge Pump Groupbox, State Combobox (both PLL1 & PLL2)
+enum SPPULMKPropChargePumpState
+{
+	LFT_SPPU_LMK_PROP_CPS_ACTIVE                          =   0,
+	LFT_SPPU_LMK_PROP_CPS_TRISTATE                        =   1
+};
+
+//LMK04806 Tab - Charge Pump Groupbox, Gain Combobox (both PLL1 & PLL2)
+enum SPPULMKPropChargePumpGain
+{
+	LFT_SPPU_LMK_PROP_CPG_100                             =   0,
+	LFT_SPPU_LMK_PROP_CPG_200                             =   1,
+	LFT_SPPU_LMK_PROP_CPG_400                             =   2,
+	LFT_SPPU_LMK_PROP_CPG_1600                            =   3
+};
+
+//LMK04806 Tab - Charge Pump Groupbox , Polarity Combobox (both PLL1 & PLL2)
+enum SPPULMKPropChargePumpPolarity
+{
+	LFT_SPPU_LMK_PROP_CPP_NEGATIVE_SLOPE                  =   0,
+	LFT_SPPU_LMK_PROP_CPP_POSITIVE_SLOPE                  =   1
+};
+
+//LMK04806 Tab - PLL2 Group box, PLL_WND_SIZE Combobox
+enum SPPULMKPropPLLWNDSize2
+{
+	LFT_SPPU_LMK_PROP_PLL_WND_SZ2_DATA1                    =   0
+};
+
+//LMK04806 Tab - PLL2 Group box, Input Freq Combobox
+enum SPPULMKPropInputFreq
+{
+	LFT_SPPU_LMK_PROP_PLL2_INPUT_FREQ_DATA1               =   0,
+	LFT_SPPU_LMK_PROP_PLL2_INPUT_FREQ_DATA2               =   1,
+	LFT_SPPU_LMK_PROP_PLL2_INPUT_FREQ_DATA3               =   2,
+	LFT_SPPU_LMK_PROP_PLL2_INPUT_FREQ_DATA4               =   3
+};
+
+
+//LMK04806 Tab - PLL2 Group box, 2X REF Combobox
+enum SPPULMKProp2XREF
+{
+	LFT_SPPU_LMK_PROP_PLL2_2X_REF_FREQUENCY_NORMAL        =   0,
+	LFT_SPPU_LMK_PROP_PLL2_2X_REF_FREQUENCY_DOUBLED       =   1
+};
+
+//LMK04806 Tab - PLL2 Group box, PLL2_FAST_PDF Combobox
+enum SPPULMKPropPLL2FASTPDF
+{
+	LFT_SPPU_LMK_PROP_PLL2_FAST_PDF_LESS_THAN_EQ_100      =   0,
+	LFT_SPPU_LMK_PROP_PLL2_FAST_PDF_GREATER_THAN_100      =   1
+};
+
+//LMK04806 Tab - PLL2 Group box, Loop Filter, R3 & R4 comboboxes
+enum SPPULMKPropResistance
+{
+	LFT_SPPU_LMK_PROP_RESISTANCE_200_OHMS               =   0,
+	LFT_SPPU_LMK_PROP_RESISTANCE_1K_OHMS                =   1,
+	LFT_SPPU_LMK_PROP_RESISTANCE_2K_OHMS                =   2,
+	LFT_SPPU_LMK_PROP_RESISTANCE_4K_OHMS                =   3,
+	LFT_SPPU_LMK_PROP_RESISTANCE_16K_OHMS               =   4
+};
+
+
+//LMK04806 Tab - PLL2 Group box, Loop Filter, C4 combobox
+enum SPPULMKPropCapacitance3
+{
+	LFT_SPPU_LMK_PROP_CAPACITANCE3_10_PF                 =   0,
+	LFT_SPPU_LMK_PROP_CAPACITANCE3_11_PF                 =   1,
+	LFT_SPPU_LMK_PROP_CAPACITANCE3_15_PF                 =   2,
+	LFT_SPPU_LMK_PROP_CAPACITANCE3_16_PF                 =   3,
+	LFT_SPPU_LMK_PROP_CAPACITANCE3_19_PF                 =   4,
+	LFT_SPPU_LMK_PROP_CAPACITANCE3_20_PF                 =   5,
+	LFT_SPPU_LMK_PROP_CAPACITANCE3_24_PF                 =   6,
+	LFT_SPPU_LMK_PROP_CAPACITANCE3_25_PF                 =   7,
+	LFT_SPPU_LMK_PROP_CAPACITANCE3_29_PF                 =   8,
+	LFT_SPPU_LMK_PROP_CAPACITANCE3_30_PF                 =   9,
+	LFT_SPPU_LMK_PROP_CAPACITANCE3_33_PF                 =   10,
+	LFT_SPPU_LMK_PROP_CAPACITANCE3_34_PF                 =   11,
+	LFT_SPPU_LMK_PROP_CAPACITANCE3_38_PF                 =   12,
+	LFT_SPPU_LMK_PROP_CAPACITANCE3_39_PF                 =   13
+};
+
+//LMK04806 Tab - PLL2 Group box, Loop Filter, C3 combobox
+enum SPPULMKPropCapacitance4
+{
+	LFT_SPPU_LMK_PROP_CAPACITANCE4_10_PF                 =   0,
+	LFT_SPPU_LMK_PROP_CAPACITANCE4_15_PF                 =   1,
+	LFT_SPPU_LMK_PROP_CAPACITANCE4_29_PF                 =   2,
+	LFT_SPPU_LMK_PROP_CAPACITANCE4_34_PF                 =   3,
+	LFT_SPPU_LMK_PROP_CAPACITANCE4_47_PF                 =   4,
+	LFT_SPPU_LMK_PROP_CAPACITANCE4_52_PF                 =   5,
+	LFT_SPPU_LMK_PROP_CAPACITANCE4_66_PF                 =   6,
+	LFT_SPPU_LMK_PROP_CAPACITANCE4_71_PF                 =   7,
+	LFT_SPPU_LMK_PROP_CAPACITANCE4_103_PF                =   8,
+	LFT_SPPU_LMK_PROP_CAPACITANCE4_108_PF                =   9,
+	LFT_SPPU_LMK_PROP_CAPACITANCE4_122_PF                =   10,
+	LFT_SPPU_LMK_PROP_CAPACITANCE4_126_PF                =   11,
+	LFT_SPPU_LMK_PROP_CAPACITANCE4_141_PF                =   12,
+	LFT_SPPU_LMK_PROP_CAPACITANCE4_146_PF                =   13
+};
+
+//SD Card Header
+enum MetaDataInfo
+{
+	LFT_SPPU_SD_CARD_HEADER_MAGIC_1			= 0x00,
+	LFT_SPPU_SD_CARD_HEADER_MAGIC_2			= 0x04,
+	LFT_SPPU_SD_CARD_HEADER_LENGTH			= 0x08,
+	LFT_SPPU_SD_CARD_HEADER_OP_MODE			= 0x0C,
+
+
+	LFT_SPPU_SD_CARD_HEADER_RF_CH1_OFFSET	= 0x10,
+	LFT_SPPU_SD_CARD_HEADER_RF_CH1_SIZE		= 0x14,
+	LFT_SPPU_SD_CARD_HEADER_RF_CH2_OFFSET	= 0x18,
+	LFT_SPPU_SD_CARD_HEADER_RF_CH2_SIZE		= 0x1C,
+
+	LFT_SPPU_SD_CARD_HEADER_IF_OFFSET		= 0x20,
+	LFT_SPPU_SD_CARD_HEADER_IF_SIZE			= 0x24,
+
+
+	LFT_SPPU_SD_CARD_HEADER_DAC_1_OFFSET	= 0x28,
+	LFT_SPPU_SD_CARD_HEADER_DAC_1_SIZE		= 0x2C,
+	LFT_SPPU_SD_CARD_HEADER_DAC_2_OFFSET	= 0x30,
+	LFT_SPPU_SD_CARD_HEADER_DAC_2_SIZE		= 0x34,
+	LFT_SPPU_SD_CARD_HEADER_DAC_3_OFFSET	= 0x38,
+	LFT_SPPU_SD_CARD_HEADER_DAC_3_SIZE		= 0x3C,
+
+	LFT_SPPU_SD_CARD_HEADER_LMK_OFFSET		= 0x40,
+	LFT_SPPU_SD_CARD_HEADER_LMK_SIZE		= 0x44,
+
+	LFT_SPPU_SD_CARD_HEADER_FPGA_OFFSET		= 0x48,
+	LFT_SPPU_SD_CARD_HEADER_FPGA_SIZE		= 0x4C
+
+#if 0
+	LFT_SPPU_SD_CARD_HEADER_MAGIC_1			= 0x50,
+	LFT_SPPU_SD_CARD_HEADER_MAGIC_2			= 0x54,
+	LFT_SPPU_SD_CARD_HEADER_LENGTH			= 0x58,
+	LFT_SPPU_SD_CARD_HEADER_MAGIC_1			= 0x5C,
+	LFT_SPPU_SD_CARD_HEADER_MAGIC_2			= 0x60,
+	LFT_SPPU_SD_CARD_HEADER_LENGTH			= 0x64,
+
+	LFT_SPPU_SD_CARD_HEADER_MAGIC_2			= 0x68,
+	LFT_SPPU_SD_CARD_HEADER_LENGTH			= 0x6C,
+	LFT_SPPU_SD_CARD_HEADER_MAGIC_1			= 0x70,
+	LFT_SPPU_SD_CARD_HEADER_MAGIC_2			= 0x74,
+	LFT_SPPU_SD_CARD_HEADER_LENGTH			= 0x78,
+	LFT_SPPU_SD_CARD_HEADER_MAGIC_1			= 0x7C,
+	LFT_SPPU_SD_CARD_HEADER_MAGIC_2			= 0x80,
+	LFT_SPPU_SD_CARD_HEADER_LENGTH			= 0x84
+#endif
+};
+
+
+#endif // ENUMS
+

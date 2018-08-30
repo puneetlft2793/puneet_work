@@ -1,0 +1,273 @@
+﻿Build started 8/29/2018 8:54:16 AM.
+Project "E:\MiddleApi\MiddleAPIWrapper\MiddleAPIWrapper.vcxproj" on node 2 (build target(s)).
+InitializeBuildStatus:
+  Creating "Release\MiddleAPIWrapper.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D MIDDLEAPIWRAPPER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Data_Recorder\dataRecorder.cpp Fast_Centroid\FastCentroidApp.cpp MiddleAPIWrapper.cpp
+  dataRecorder.cpp
+e:\middleapi\middleapiwrapper\../PcieDll/Pcie.h(17): warning C4005: 'USB_DLL_DEBUF_FILE_NAME' : macro redefinition
+          e:\middleapi\middleapiwrapper\../USBAPI/SppuUsbDll.h(52) : see previous definition of 'USB_DLL_DEBUF_FILE_NAME'
+e:\middleapi\middleapiwrapper\../PcieDll/Pcie.h(21): warning C4005: 'DEBUG_ERROR' : macro redefinition
+          e:\middleapi\middleapiwrapper\../USBAPI/SppuUsbDll.h(17) : see previous definition of 'DEBUG_ERROR'
+e:\middleapi\middleapiwrapper\../PcieDll/Pcie.h(22): warning C4005: 'DEBUG_INFO' : macro redefinition
+          e:\middleapi\middleapiwrapper\../USBAPI/SppuUsbDll.h(20) : see previous definition of 'DEBUG_INFO'
+Data_Recorder\dataRecorder.cpp(76): warning C4482: nonstandard extension used: enum 'SPPUDeviceType' used in qualified name
+Data_Recorder\dataRecorder.cpp(134): warning C4244: 'argument' : conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+Data_Recorder\dataRecorder.cpp(188): warning C4244: 'argument' : conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+Data_Recorder\dataRecorder.cpp(44): warning C4101: 'pnSizeWritten' : unreferenced local variable
+Data_Recorder\dataRecorder.cpp(686): warning C4244: 'argument' : conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+  FastCentroidApp.cpp
+e:\middleapi\middleapiwrapper\../PcieDll/Pcie.h(17): warning C4005: 'USB_DLL_DEBUF_FILE_NAME' : macro redefinition
+          e:\middleapi\middleapiwrapper\../USBAPI/SppuUsbDll.h(52) : see previous definition of 'USB_DLL_DEBUF_FILE_NAME'
+e:\middleapi\middleapiwrapper\../PcieDll/Pcie.h(21): warning C4005: 'DEBUG_ERROR' : macro redefinition
+          e:\middleapi\middleapiwrapper\../USBAPI/SppuUsbDll.h(17) : see previous definition of 'DEBUG_ERROR'
+e:\middleapi\middleapiwrapper\../PcieDll/Pcie.h(22): warning C4005: 'DEBUG_INFO' : macro redefinition
+          e:\middleapi\middleapiwrapper\../USBAPI/SppuUsbDll.h(20) : see previous definition of 'DEBUG_INFO'
+Fast_Centroid\FastCentroidApp.cpp(49): warning C4101: 'ms' : unreferenced local variable
+Fast_Centroid\FastCentroidApp.cpp(48): warning C4101: 'seconds' : unreferenced local variable
+Fast_Centroid\FastCentroidApp.cpp(48): warning C4101: 'seconds_end' : unreferenced local variable
+Fast_Centroid\FastCentroidApp.cpp(49): warning C4101: 'ms_end' : unreferenced local variable
+  MiddleAPIWrapper.cpp
+e:\middleapi\middleapiwrapper\../PcieDll/Pcie.h(17): warning C4005: 'USB_DLL_DEBUF_FILE_NAME' : macro redefinition
+          e:\middleapi\middleapiwrapper\../USBAPI/SppuUsbDll.h(52) : see previous definition of 'USB_DLL_DEBUF_FILE_NAME'
+e:\middleapi\middleapiwrapper\../PcieDll/Pcie.h(21): warning C4005: 'DEBUG_ERROR' : macro redefinition
+          e:\middleapi\middleapiwrapper\../USBAPI/SppuUsbDll.h(17) : see previous definition of 'DEBUG_ERROR'
+e:\middleapi\middleapiwrapper\../PcieDll/Pcie.h(22): warning C4005: 'DEBUG_INFO' : macro redefinition
+          e:\middleapi\middleapiwrapper\../USBAPI/SppuUsbDll.h(20) : see previous definition of 'DEBUG_INFO'
+MiddleAPIWrapper.cpp(774): warning C4101: 'i' : unreferenced local variable
+MiddleAPIWrapper.cpp(909): warning C4482: nonstandard extension used: enum 'SPPUDeviceType' used in qualified name
+MiddleAPIWrapper.cpp(949): warning C4482: nonstandard extension used: enum 'SPPUDeviceType' used in qualified name
+MiddleAPIWrapper.cpp(1045): warning C4482: nonstandard extension used: enum 'SPPUDeviceType' used in qualified name
+MiddleAPIWrapper.cpp(1158): warning C4482: nonstandard extension used: enum 'SPPUDeviceType' used in qualified name
+MiddleAPIWrapper.cpp(1171): warning C4101: 'pnSizeWritten' : unreferenced local variable
+MiddleAPIWrapper.cpp(1220): warning C4101: 'pnSizeWritten' : unreferenced local variable
+MiddleAPIWrapper.cpp(1278): warning C4101: 'pnSizeWritten' : unreferenced local variable
+MiddleAPIWrapper.cpp(1463): warning C4482: nonstandard extension used: enum 'SPPUDeviceType' used in qualified name
+MiddleAPIWrapper.cpp(1579): warning C4482: nonstandard extension used: enum 'SPPUDeviceType' used in qualified name
+MiddleAPIWrapper.cpp(1457): warning C4101: 'pnSizeWritten' : unreferenced local variable
+MiddleAPIWrapper.cpp(2011): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2015): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2019): warning C4482: nonstandard extension used: enum 'SPPUDeviceType' used in qualified name
+MiddleAPIWrapper.cpp(2021): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2026): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2030): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2035): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2039): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2044): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2048): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2054): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2058): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2064): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2068): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2074): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2078): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2084): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2088): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2094): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2098): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2104): warning C4482: nonstandard extension used: enum 'MetaDataInfo' used in qualified name
+MiddleAPIWrapper.cpp(2005): warning C4101: 'lv' : unreferenced local variable
+MiddleAPIWrapper.cpp(2121): warning C4482: nonstandard extension used: enum 'SPPUDeviceType' used in qualified name
+MiddleAPIWrapper.cpp(2138): warning C4482: nonstandard extension used: enum 'SPPUDeviceType' used in qualified name
+MiddleAPIWrapper.cpp(2142): warning C4482: nonstandard extension used: enum 'SPPUDeviceType' used in qualified name
+MiddleAPIWrapper.cpp(2146): warning C4482: nonstandard extension used: enum 'SPPUDeviceType' used in qualified name
+MiddleAPIWrapper.cpp(2197): warning C4482: nonstandard extension used: enum 'SPPUDeviceType' used in qualified name
+MiddleAPIWrapper.cpp(2237): warning C4482: nonstandard extension used: enum 'SPPUDeviceType' used in qualified name
+MiddleAPIWrapper.cpp(2802): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(2813): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(2814): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(2923): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(2934): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(2935): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(3024): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(3035): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(3036): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(3194): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(3222): warning C4018: '<' : signed/unsigned mismatch
+MiddleAPIWrapper.cpp(3320): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(3329): warning C4018: '<' : signed/unsigned mismatch
+MiddleAPIWrapper.cpp(3985): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+MiddleAPIWrapper.cpp(3989): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+MiddleAPIWrapper.cpp(3993): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+MiddleAPIWrapper.cpp(3997): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+MiddleAPIWrapper.cpp(4001): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+MiddleAPIWrapper.cpp(4005): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+MiddleAPIWrapper.cpp(4009): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+MiddleAPIWrapper.cpp(4046): warning C4996: '_sleep': This function or variable has been superceded by newer library or operating system functionality. Consider using Sleep instead. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdlib.h(843) : see declaration of '_sleep'
+MiddleAPIWrapper.cpp(4079): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(4174): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(4192): warning C4018: '<' : signed/unsigned mismatch
+MiddleAPIWrapper.cpp(4252): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(4460): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(4645): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(4379): warning C4101: 'wcountspi' : unreferenced local variable
+MiddleAPIWrapper.cpp(4780): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(5011): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(4744): warning C4101: 'rcount' : unreferenced local variable
+MiddleAPIWrapper.cpp(4742): warning C4101: 'writefinal' : unreferenced local variable
+MiddleAPIWrapper.cpp(5323): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(5460): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(5235): warning C4101: 'rcount' : unreferenced local variable
+MiddleAPIWrapper.cpp(5233): warning C4101: 'writefinal' : unreferenced local variable
+MiddleAPIWrapper.cpp(5872): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(5922): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(5863): warning C4101: 'pnSizeRead' : unreferenced local variable
+MiddleAPIWrapper.cpp(5866): warning C4101: 'wrBinFile' : unreferenced local variable
+MiddleAPIWrapper.cpp(6006): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+MiddleAPIWrapper.cpp(6002): warning C4101: 'numBytesWr' : unreferenced local variable
+MiddleAPIWrapper.cpp(6103): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+MiddleAPIWrapper.cpp(6096): warning C4101: 'numBytesWr' : unreferenced local variable
+MiddleAPIWrapper.cpp(6182): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+MiddleAPIWrapper.cpp(6190): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+MiddleAPIWrapper.cpp(6208): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+MiddleAPIWrapper.cpp(6168): warning C4101: 'numBytesRd' : unreferenced local variable
+MiddleAPIWrapper.cpp(6629): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(6630): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(6667): warning C4244: '=' : conversion from 'double' to 'unsigned int', possible loss of data
+MiddleAPIWrapper.cpp(6669): warning C4244: '=' : conversion from 'double' to 'unsigned int', possible loss of data
+MiddleAPIWrapper.cpp(6982): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : see declaration of 'sprintf'
+MiddleAPIWrapper.cpp(7204): warning C4305: 'initializing' : truncation from 'double' to 'float'
+MiddleAPIWrapper.cpp(8166): warning C4305: '=' : truncation from 'double' to 'float'
+MiddleAPIWrapper.cpp(8176): warning C4305: '=' : truncation from 'double' to 'float'
+MiddleAPIWrapper.cpp(8200): warning C4305: '=' : truncation from 'double' to 'float'
+MiddleAPIWrapper.cpp(8210): warning C4305: '=' : truncation from 'double' to 'float'
+MiddleAPIWrapper.cpp(12926): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(13157): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(12890): warning C4101: 'rcount' : unreferenced local variable
+MiddleAPIWrapper.cpp(12888): warning C4101: 'writefinal' : unreferenced local variable
+MiddleAPIWrapper.cpp(13548): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(13697): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(13707): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(13622): warning C4101: 'byArrPktResp' : unreferenced local variable
+MiddleAPIWrapper.cpp(13621): warning C4101: 'rcvdLen' : unreferenced local variable
+MiddleAPIWrapper.cpp(14002): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(14023): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(14027): warning C4018: '<' : signed/unsigned mismatch
+MiddleAPIWrapper.cpp(13905): warning C4101: 'numBytesRd' : unreferenced local variable
+MiddleAPIWrapper.cpp(13909): warning C4101: 'read_byte' : unreferenced local variable
+MiddleAPIWrapper.cpp(13908): warning C4101: 'write_byte' : unreferenced local variable
+MiddleAPIWrapper.cpp(13907): warning C4101: 'rcount' : unreferenced local variable
+MiddleAPIWrapper.cpp(13904): warning C4101: 'numBytesWr' : unreferenced local variable
+MiddleAPIWrapper.cpp(14415): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(14535): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(14104): warning C4101: 'numBytesRd' : unreferenced local variable
+MiddleAPIWrapper.cpp(14106): warning C4101: 'rcount' : unreferenced local variable
+MiddleAPIWrapper.cpp(14103): warning C4101: 'numBytesWr' : unreferenced local variable
+MiddleAPIWrapper.cpp(14741): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(14775): warning C4018: '<' : signed/unsigned mismatch
+MiddleAPIWrapper.cpp(14917): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(14919): warning C4018: '<' : signed/unsigned mismatch
+MiddleAPIWrapper.cpp(14962): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(14645): warning C4101: 'numBytesRd' : unreferenced local variable
+MiddleAPIWrapper.cpp(14647): warning C4101: 'rcount' : unreferenced local variable
+MiddleAPIWrapper.cpp(14644): warning C4101: 'numBytesWr' : unreferenced local variable
+MiddleAPIWrapper.cpp(15219): warning C4293: '<<' : shift count negative or too big, undefined behavior
+MiddleAPIWrapper.cpp(15219): warning C4293: '<<' : shift count negative or too big, undefined behavior
+MiddleAPIWrapper.cpp(15219): warning C4293: '<<' : shift count negative or too big, undefined behavior
+MiddleAPIWrapper.cpp(15219): warning C4293: '<<' : shift count negative or too big, undefined behavior
+MiddleAPIWrapper.cpp(15220): warning C4293: '<<' : shift count negative or too big, undefined behavior
+MiddleAPIWrapper.cpp(15220): warning C4293: '<<' : shift count negative or too big, undefined behavior
+MiddleAPIWrapper.cpp(15220): warning C4293: '<<' : shift count negative or too big, undefined behavior
+MiddleAPIWrapper.cpp(15220): warning C4293: '<<' : shift count negative or too big, undefined behavior
+MiddleAPIWrapper.cpp(15221): warning C4293: '<<' : shift count negative or too big, undefined behavior
+MiddleAPIWrapper.cpp(15221): warning C4293: '<<' : shift count negative or too big, undefined behavior
+MiddleAPIWrapper.cpp(15221): warning C4293: '<<' : shift count negative or too big, undefined behavior
+MiddleAPIWrapper.cpp(15221): warning C4293: '<<' : shift count negative or too big, undefined behavior
+MiddleAPIWrapper.cpp(15233): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(15234): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(15239): warning C4244: '=' : conversion from 'unsigned __int64' to 'DWORD', possible loss of data
+MiddleAPIWrapper.cpp(15247): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(15248): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(15253): warning C4244: '=' : conversion from 'unsigned __int64' to 'DWORD', possible loss of data
+MiddleAPIWrapper.cpp(15187): warning C4101: 'data_sec_data' : unreferenced local variable
+MiddleAPIWrapper.cpp(15190): warning C4101: 'ptr_data_sec_data' : unreferenced local variable
+MiddleAPIWrapper.cpp(15833): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+MiddleAPIWrapper.cpp(15785): warning C4101: 'rd_ptr' : unreferenced local variable
+MiddleAPIWrapper.cpp(15791): warning C4101: 'file_write' : unreferenced local variable
+MiddleAPIWrapper.cpp(15790): warning C4101: 'file_read' : unreferenced local variable
+Link:
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\MiddleApi\Release\MiddleAPIWrapper.dll" /INCREMENTAL:NO /NOLOGO /LIBPATH:D:\project\sppu\29th9\0.00.044\10thsep_4.30latest\MiddleAPIWrapper\Release /LIBPATH:D:\project\sppu\MiddileWrapper\guichenges\0.00.039_all_28aug15\MiddleAPIWrapper\Release /LIBPATH:D:\project\sppu\MiddileWrapper\0.00.039_all_28aug15\MiddleAPIWrapper\Release /LIBPATH:D:\sppu\latest20.8.15\MiddleAPIWrapper\Release /LIBPATH:Q:\Lib /LIBPATH:..\Release\ SerialAPI.lib EthernetAPI.lib SppuUsbDLL.lib PcieDll.lib wdapi1160.lib xbmd_memory_diag.lib FTD2XX.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\MiddleAPIWrapper.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\MiddleApi\Release\MiddleAPIWrapper.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\MiddleApi\Release\MiddleAPIWrapper.lib" /MACHINE:X86 /DLL Release\dataRecorder.obj
+  Release\FastCentroidApp.obj
+  Release\MiddleAPIWrapper.obj
+  ..\Lib\FTD2XX.lib
+  ..\Release\wdapi1160.lib
+  ..\Release\xbmd_memory_diag.lib
+  E:\MiddleApi\Release\EthernetAPI.lib
+  E:\MiddleApi\Release\SerialAPI.lib
+     Creating library E:\MiddleApi\Release\MiddleAPIWrapper.lib and object E:\MiddleApi\Release\MiddleAPIWrapper.exp
+  Generating code
+e:\middleapi\middleapiwrapper\middleapiwrapper.cpp(15215): warning C4700: uninitialized local variable 'current_data_ptr' used
+e:\middleapi\middleapiwrapper\middleapiwrapper.cpp(15239): warning C4700: uninitialized local variable 'tmp' used
+e:\middleapi\middleapiwrapper\middleapiwrapper.cpp(15241): warning C4700: uninitialized local variable 'video_sec_data' used
+e:\middleapi\middleapiwrapper\middleapiwrapper.cpp(15255): warning C4700: uninitialized local variable 'image_sec_data' used
+e:\middleapi\middleapiwrapper\middleapiwrapper.cpp(6455): warning C4715: 'MiddleAPIWrapper::MiddleAPI::sensorCalib_Frame_RdWr' : not all control paths return a value
+e:\middleapi\middleapiwrapper\fast_centroid\fastcentroidapp.cpp(648): warning C4715: 'MiddleAPIWrapper::MiddleAPI::Init_Sram_Read_Stat' : not all control paths return a value
+e:\middleapi\middleapiwrapper\data_recorder\datarecorder.cpp(225): warning C4715: 'MiddleAPIWrapper::MiddleAPI::ProgramIQData_ISTRAC' : not all control paths return a value
+e:\middleapi\middleapiwrapper\middleapiwrapper.cpp(14457): warning C4700: uninitialized local variable 'wrBinFile' used
+  Finished generating code
+  MiddleAPIWrapper.vcxproj -> E:\MiddleApi\Release\MiddleAPIWrapper.dll
+Manifest:
+  c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\MiddleApi\Release\MiddleAPIWrapper.dll;#2" /manifest Release\MiddleAPIWrapper.dll.intermediate.manifest
+FinalizeBuildStatus:
+  Deleting file "Release\MiddleAPIWrapper.unsuccessfulbuild".
+  Touching "Release\MiddleAPIWrapper.lastbuildstate".
+Done Building Project "E:\MiddleApi\MiddleAPIWrapper\MiddleAPIWrapper.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.53

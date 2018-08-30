@@ -1,0 +1,22 @@
+
+############################################################
+Logging Started :3/8/2016	14:51:56
+
+STATUS: Loop Counter is = 5
+STATUS: Number of Bulk Endpoints are = 4
+STATUS: Number of Bulk In  Endpoints are = 2
+STATUS: Number of Bulk OUT Endpoints are = 2
+STATUS: Device Opened Successfully!
+STATUS: Got request for Reading Sd Card9
+ERROR: BulkInEndPt->XferData failure
+read : 0Bytes
+STATUS: Got request for Reading Sd Card9
+ERROR: BulkInEndPt->XferData failure
+read : 0Bytes
+STATUS: Got request for Reading Sd Card9
+ERROR: BulkInEndPt->XferData failure
+read : 0Bytes
+STATUS: Got request for Reading Sd Card9
+ERROR: BulkInEndPt->XferData failure
+read : 0Bytes
+STATUS: Got request for Reading Sd Card9

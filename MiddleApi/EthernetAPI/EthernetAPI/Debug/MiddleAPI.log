@@ -1,0 +1,23 @@
+﻿Build started 5/7/2015 12:42:09 PM.
+     1>Project "C:\PROJECTS\VS\MiddleAPI\MiddleAPI\MiddleAPI.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\MiddleAPI.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D MIDDLEAPI_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt MiddleLayer.cpp
+         MiddleLayer.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\PROJECTS\VS\MiddleAPIWrapper\Debug\MiddleAPI.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\MiddleAPI.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\PROJECTS\VS\MiddleAPIWrapper\Debug\MiddleAPI.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\PROJECTS\VS\MiddleAPIWrapper\Debug\MiddleAPI.lib" /MACHINE:X86 /DLL Debug\cprotocol.obj
+         Debug\MiddleLayer.obj
+     1>cprotocol.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+            Creating library C:\PROJECTS\VS\MiddleAPIWrapper\Debug\MiddleAPI.lib and object C:\PROJECTS\VS\MiddleAPIWrapper\Debug\MiddleAPI.exp
+         MiddleAPI.vcxproj -> C:\PROJECTS\VS\MiddleAPIWrapper\Debug\MiddleAPI.dll
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\PROJECTS\VS\MiddleAPIWrapper\Debug\MiddleAPI.dll;#2" /manifest Debug\MiddleAPI.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\MiddleAPI.unsuccessfulbuild".
+         Touching "Debug\MiddleAPI.lastbuildstate".
+     1>Done Building Project "C:\PROJECTS\VS\MiddleAPI\MiddleAPI\MiddleAPI.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.63

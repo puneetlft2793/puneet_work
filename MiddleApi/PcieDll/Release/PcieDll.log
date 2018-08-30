@@ -1,0 +1,38 @@
+﻿Build started 8/29/2018 8:54:09 AM.
+Project "E:\MiddleApi\PcieDll\PcieDll.vcxproj" on node 2 (build target(s)).
+InitializeBuildStatus:
+  Creating "Release\PcieDll.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D PCIEDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt PcieBulkXfer.cpp PcieDevOpenClose.cpp PcieRegAccess.cpp
+  PcieBulkXfer.cpp
+PcieBulkXfer.cpp(320): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+PcieBulkXfer.cpp(445): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+PcieBulkXfer.cpp(494): warning C4018: '<' : signed/unsigned mismatch
+PcieBulkXfer.cpp(547): warning C4102: 'Error' : unreferenced label
+PcieBulkXfer.cpp(246): warning C4101: 'XbmdLog' : unreferenced local variable
+PcieBulkXfer.cpp(240): warning C4101: 'i' : unreferenced local variable
+PcieBulkXfer.cpp(248): warning C4101: 'st' : unreferenced local variable
+PcieBulkXfer.cpp(250): warning C4101: 'ret' : unreferenced local variable
+PcieBulkXfer.cpp(240): warning C4101: 'dwStatus' : unreferenced local variable
+  PcieDevOpenClose.cpp
+  PcieRegAccess.cpp
+Link:
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\Release\PcieDll.dll" /INCREMENTAL:NO /NOLOGO SetupApi.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\PcieDll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\MiddleApi\Release\PcieDll.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\MiddleApi\Release\PcieDll.lib" /MACHINE:X86 /DLL Release\PcieBulkXfer.obj
+  Release\PcieDevOpenClose.obj
+  Release\PcieRegAccess.obj
+     Creating library E:\MiddleApi\Release\PcieDll.lib and object E:\MiddleApi\Release\PcieDll.exp
+  Generating code
+  Finished generating code
+  PcieDll.vcxproj -> E:\MiddleApi\Release\PcieDll.dll
+Manifest:
+  c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\Release\PcieDll.dll;#2" /manifest Release\PcieDll.dll.intermediate.manifest
+FinalizeBuildStatus:
+  Deleting file "Release\PcieDll.unsuccessfulbuild".
+  Touching "Release\PcieDll.lastbuildstate".
+Done Building Project "E:\MiddleApi\PcieDll\PcieDll.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.81

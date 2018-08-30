@@ -1,0 +1,17 @@
+﻿Build started 6/27/2018 11:32:44 AM.
+     1>Project "C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\EthernetAPI\EthernetAPI\EthernetAPI.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\EthernetAPI.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         EthernetAPI.vcxproj -> C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\Debug\EthernetAPI.dll
+       FinalizeBuildStatus:
+         Deleting file "Debug\EthernetAPI.unsuccessfulbuild".
+         Touching "Debug\EthernetAPI.lastbuildstate".
+     1>Done Building Project "C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\EthernetAPI\EthernetAPI\EthernetAPI.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.14

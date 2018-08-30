@@ -1,0 +1,19 @@
+﻿Build started 6/27/2018 11:32:45 AM.
+     1>Project "C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\MiddleAPIWrapper\MiddleAPIWrapper.vcxproj" on node 5 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\MiddleAPIWrapper.unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D MIDDLEAPIWRAPPER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Data_Recorder\dataRecorder.cpp
+         dataRecorder.cpp
+     1>c:\users\admin\desktop\istrac\svn\software\middleapi\pciedll\pcie.h(17): warning C4005: 'USB_DLL_DEBUF_FILE_NAME' : macro redefinition
+                 c:\users\admin\desktop\istrac\svn\software\middleapi\usbapi\sppuusbdll.h(52) : see previous definition of 'USB_DLL_DEBUF_FILE_NAME'
+     1>c:\users\admin\desktop\istrac\svn\software\middleapi\pciedll\pcie.h(21): warning C4005: 'DEBUG_ERROR' : macro redefinition
+                 c:\users\admin\desktop\istrac\svn\software\middleapi\usbapi\sppuusbdll.h(17) : see previous definition of 'DEBUG_ERROR'
+     1>c:\users\admin\desktop\istrac\svn\software\middleapi\pciedll\pcie.h(22): warning C4005: 'DEBUG_INFO' : macro redefinition
+                 c:\users\admin\desktop\istrac\svn\software\middleapi\usbapi\sppuusbdll.h(20) : see previous definition of 'DEBUG_INFO'
+     1>c:\users\admin\desktop\istrac\svn\software\middleapi\middleapiwrapper\data_recorder\datarecorder.cpp(26): error C4716: 'MiddleAPIWrapper::MiddleAPI::ISTRAC_SSD_Sel' : must return a value
+     1>Done Building Project "C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\MiddleAPIWrapper\MiddleAPIWrapper.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.07

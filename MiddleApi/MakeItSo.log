@@ -1,0 +1,54 @@
+Parsing middleapiwrapper.sln
+- parsing project MiddleAPIWrapper
+  - done
+- parsing project SerialAPI
+  - done
+- parsing project EthernetAPI
+  - done
+- parsing project SppuUsbDll
+  - done
+- parsing project SppuUsbApp
+  - done
+- parsing project PcieDll
+  - done
+- parsing project Test_PciDll
+  - done
+Parsing succeeded.
+Creating makefile...
+Creating makefile succeeded.
+Parsing middleapiwrapper.sln
+- parsing project MiddleAPIWrapper
+  - done
+- parsing project SerialAPI
+  - done
+- parsing project EthernetAPI
+  - done
+- parsing project SppuUsbDll
+  - done
+- parsing project SppuUsbApp
+  - done
+- parsing project PcieDll
+  - done
+- parsing project Test_PciDll
+  - done
+Parsing succeeded.
+Creating makefile...
+Creating makefile succeeded.
+Parsing middleapiwrapper.sln
+- parsing project MiddleAPIWrapper
+  - done
+- parsing project SerialAPI
+  - done
+- parsing project EthernetAPI
+  - done
+- parsing project SppuUsbDll
+  - done
+- parsing project SppuUsbApp
+  - done
+- parsing project PcieDll
+  - done
+- parsing project Test_PciDll
+  - done
+Parsing succeeded.
+Creating makefile...
+Creating makefile succeeded.

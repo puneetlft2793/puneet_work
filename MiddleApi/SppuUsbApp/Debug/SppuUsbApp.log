@@ -1,0 +1,22 @@
+﻿Build started 6/27/2018 11:32:45 AM.
+     1>Project "C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\SppuUsbApp\SppuUsbApp.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\SppuUsbApp.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\Debug\TEST_USB_SppuUsbApp.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\TEST_USB_SppuUsbApp.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\Debug\TEST_USB_SppuUsbApp.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\Debug\TEST_USB_SppuUsbApp.lib" /MACHINE:X86 Debug\SppuUsbApp.obj
+         Debug\stdafx.obj
+         C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\Debug\SppuUsbDll.lib
+     1>SppuUsbApp.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+         SppuUsbApp.vcxproj -> C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\SppuUsbApp\..\Debug\TEST_USB_SppuUsbApp.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\Debug\TEST_USB_SppuUsbApp.exe;#1" /manifest Debug\TEST_USB_SppuUsbApp.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\SppuUsbApp.unsuccessfulbuild".
+         Touching "Debug\SppuUsbApp.lastbuildstate".
+     1>Done Building Project "C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\SppuUsbApp\SppuUsbApp.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.52

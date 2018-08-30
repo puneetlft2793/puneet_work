@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SppuUsbDll", "SppuUsbDll\SppuUsbDll.vcxproj", "{265EA521-FB72-4A3C-97D3-F314D34D3FBF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SppuUsbApp", "SppuUsbApp\SppuUsbApp.vcxproj", "{7F758C91-FF0D-47B5-8C76-52E2D03FF8C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{265EA521-FB72-4A3C-97D3-F314D34D3FBF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{265EA521-FB72-4A3C-97D3-F314D34D3FBF}.Debug|Win32.Build.0 = Debug|Win32
+		{265EA521-FB72-4A3C-97D3-F314D34D3FBF}.Release|Win32.ActiveCfg = Release|Win32
+		{265EA521-FB72-4A3C-97D3-F314D34D3FBF}.Release|Win32.Build.0 = Release|Win32
+		{7F758C91-FF0D-47B5-8C76-52E2D03FF8C0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7F758C91-FF0D-47B5-8C76-52E2D03FF8C0}.Debug|Win32.Build.0 = Debug|Win32
+		{7F758C91-FF0D-47B5-8C76-52E2D03FF8C0}.Release|Win32.ActiveCfg = Release|Win32
+		{7F758C91-FF0D-47B5-8C76-52E2D03FF8C0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

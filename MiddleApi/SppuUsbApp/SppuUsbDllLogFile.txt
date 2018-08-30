@@ -1,0 +1,15 @@
+
+############################################################
+Logging Started :12/8/2015	16:47:22
+
+STATUS: Loop Counter is = 5
+STATUS: Number of Bulk Endpoints are = 4
+STATUS: Number of Bulk In  Endpoints are = 2
+STATUS: Number of Bulk OUT Endpoints are = 2
+STATUS: Device Opened Successfully!
+ERROR: Unable to program SPI Flash.
+ERROR : Unable to open Device!
+ERROR : Unable to open Device!
+ERROR : Unable to open Device!
+STATUS: Got request for Writing DDR6
+ERROR : File does not Exist!

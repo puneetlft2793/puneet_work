@@ -1,0 +1,118 @@
+﻿Build started 8/29/2018 8:54:03 AM.
+Project "E:\MiddleApi\SppuUsbDll\SppuUsbDll.vcxproj" on node 2 (build target(s)).
+InitializeBuildStatus:
+  Creating "Release\SppuUsbDll.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D SPPUUSBDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Release\SppuUsbDll.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+  stdafx.cpp
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D SPPUUSBDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+  dllmain.cpp
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D SPPUUSBDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Release\SppuUsbDll.pch" /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt SppuUsbDll.cpp
+  SppuUsbDll.cpp
+SppuUsbDll.cpp(421): warning C4244: '=' : conversion from 'DWORD' to 'unsigned char', possible loss of data
+SppuUsbDll.cpp(426): warning C4244: '=' : conversion from 'DWORD' to 'unsigned char', possible loss of data
+SppuUsbDll.cpp(959): warning C4482: nonstandard extension used: enum 'UsbApis::DEVICE_TYPES' used in qualified name
+SppuUsbDll.cpp(965): warning C4244: '=' : conversion from 'DWORD' to 'unsigned char', possible loss of data
+SppuUsbDll.cpp(1103): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(1173): warning C4482: nonstandard extension used: enum 'UsbApis::DEVICE_TYPES' used in qualified name
+SppuUsbDll.cpp(1296): warning C4482: nonstandard extension used: enum 'UsbApis::DEVICE_TYPES' used in qualified name
+SppuUsbDll.cpp(1227): warning C4101: 'rdBinFile' : unreferenced local variable
+SppuUsbDll.cpp(1380): warning C4244: '=' : conversion from 'DWORD' to 'unsigned char', possible loss of data
+SppuUsbDll.cpp(1594): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(1680): warning C4101: 'wrBinFile' : unreferenced local variable
+SppuUsbDll.cpp(1795): warning C4482: nonstandard extension used: enum 'UsbApis::DEVICE_TYPES' used in qualified name
+SppuUsbDll.cpp(1803): warning C4482: nonstandard extension used: enum 'UsbApis::DEVICE_TYPES' used in qualified name
+SppuUsbDll.cpp(1855): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(1931): warning C4018: '<' : signed/unsigned mismatch
+SppuUsbDll.cpp(1942): warning C4018: '<' : signed/unsigned mismatch
+SppuUsbDll.cpp(1945): warning C4018: '<' : signed/unsigned mismatch
+SppuUsbDll.cpp(1874): warning C4101: 'lv' : unreferenced local variable
+SppuUsbDll.cpp(2036): warning C4482: nonstandard extension used: enum 'UsbApis::DEVICE_TYPES' used in qualified name
+SppuUsbDll.cpp(2045): warning C4482: nonstandard extension used: enum 'UsbApis::DEVICE_TYPES' used in qualified name
+SppuUsbDll.cpp(2090): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(2208): warning C4018: '<' : signed/unsigned mismatch
+SppuUsbDll.cpp(2211): warning C4018: '<' : signed/unsigned mismatch
+SppuUsbDll.cpp(2131): warning C4101: 'lv' : unreferenced local variable
+SppuUsbDll.cpp(2131): warning C4101: 'tmpBufMod' : unreferenced local variable
+SppuUsbDll.cpp(2549): warning C4482: nonstandard extension used: enum 'UsbApis::DEVICE_TYPES' used in qualified name
+SppuUsbDll.cpp(2558): warning C4482: nonstandard extension used: enum 'UsbApis::DEVICE_TYPES' used in qualified name
+SppuUsbDll.cpp(2672): warning C4018: '<' : signed/unsigned mismatch
+SppuUsbDll.cpp(2675): warning C4018: '<' : signed/unsigned mismatch
+SppuUsbDll.cpp(2678): warning C4018: '<' : signed/unsigned mismatch
+SppuUsbDll.cpp(2616): warning C4101: 'lv' : unreferenced local variable
+SppuUsbDll.cpp(2775): warning C4482: nonstandard extension used: enum 'UsbApis::DEVICE_TYPES' used in qualified name
+SppuUsbDll.cpp(2784): warning C4482: nonstandard extension used: enum 'UsbApis::DEVICE_TYPES' used in qualified name
+SppuUsbDll.cpp(2917): warning C4018: '<' : signed/unsigned mismatch
+SppuUsbDll.cpp(2920): warning C4018: '<' : signed/unsigned mismatch
+SppuUsbDll.cpp(2843): warning C4101: 'lv' : unreferenced local variable
+SppuUsbDll.cpp(2843): warning C4101: 'tmpBufMod' : unreferenced local variable
+SppuUsbDll.cpp(3050): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(3007): warning C4101: 'inOvLap' : unreferenced local variable
+SppuUsbDll.cpp(2996): warning C4101: 'ret' : unreferenced local variable
+SppuUsbDll.cpp(3108): warning C4482: nonstandard extension used: enum 'UsbApis::USB_ENDPOINTS' used in qualified name
+SppuUsbDll.cpp(3109): warning C4482: nonstandard extension used: enum 'UsbApis::USB_ENDPOINTS' used in qualified name
+SppuUsbDll.cpp(3110): warning C4482: nonstandard extension used: enum 'UsbApis::USB_ENDPOINTS' used in qualified name
+SppuUsbDll.cpp(3111): warning C4482: nonstandard extension used: enum 'UsbApis::USB_ENDPOINTS' used in qualified name
+SppuUsbDll.cpp(3228): warning C4482: nonstandard extension used: enum 'UsbApis::DEVICE_TYPES' used in qualified name
+SppuUsbDll.cpp(3243): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(3340): warning C4244: 'argument' : conversion from 'DWORD' to 'UINT16', possible loss of data
+SppuUsbDll.cpp(3346): warning C4244: '+=' : conversion from 'DWORD' to 'UINT16', possible loss of data
+SppuUsbDll.cpp(3367): warning C4482: nonstandard extension used: enum 'UsbApis::DEVICE_TYPES' used in qualified name
+SppuUsbDll.cpp(3286): warning C4101: 'lNumSpiBufs' : unreferenced local variable
+SppuUsbDll.cpp(3286): warning C4101: 'lNumSpiPgs' : unreferenced local variable
+SppuUsbDll.cpp(3398): warning C4018: '<' : signed/unsigned mismatch
+SppuUsbDll.cpp(3426): warning C4101: 'lv' : unreferenced local variable
+SppuUsbDll.cpp(3465): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(3480): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(3484): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(3498): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(3560): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(3594): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(3606): warning C4482: nonstandard extension used: enum 'UsbApis::DEVICE_TYPES' used in qualified name
+SppuUsbDll.cpp(3609): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(3622): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(3694): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(3744): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(3769): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(3788): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(3802): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+SppuUsbDll.cpp(3849): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(234) : see declaration of 'fopen'
+Link:
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\Release\SppuUsbDll.dll" /INCREMENTAL:NO /NOLOGO .\library\x86\CyAPI.lib SetupAPI.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\SppuUsbDll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\MiddleApi\Release\SppuUsbDll.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\MiddleApi\Release\SppuUsbDll.lib" /MACHINE:X86 /DLL Release\dllmain.obj
+  Release\SppuUsbDll.obj
+  Release\stdafx.obj
+     Creating library E:\MiddleApi\Release\SppuUsbDll.lib and object E:\MiddleApi\Release\SppuUsbDll.exp
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  Finished generating code
+  SppuUsbDll.vcxproj -> E:\MiddleApi\Release\SppuUsbDll.dll
+Manifest:
+  c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\Release\SppuUsbDll.dll;#2" /manifest Release\SppuUsbDll.dll.intermediate.manifest
+FinalizeBuildStatus:
+  Deleting file "Release\SppuUsbDll.unsuccessfulbuild".
+  Touching "Release\SppuUsbDll.lastbuildstate".
+Done Building Project "E:\MiddleApi\SppuUsbDll\SppuUsbDll.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.69

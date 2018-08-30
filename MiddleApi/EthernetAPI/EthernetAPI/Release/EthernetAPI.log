@@ -1,0 +1,43 @@
+﻿Build started 8/29/2018 8:54:08 AM.
+Project "E:\MiddleApi\EthernetAPI\EthernetAPI\EthernetAPI.vcxproj" on node 2 (build target(s)).
+InitializeBuildStatus:
+  Creating "Release\EthernetAPI.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D MIDDLEAPI_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt cprotocol.cpp EthernetAPI.cpp
+  cprotocol.cpp
+cprotocol.cpp(552): warning C4018: '<' : signed/unsigned mismatch
+cprotocol.cpp(565): warning C4018: '<' : signed/unsigned mismatch
+cprotocol.cpp(580): warning C4018: '<' : signed/unsigned mismatch
+cprotocol.cpp(592): warning C4018: '<' : signed/unsigned mismatch
+cprotocol.cpp(604): warning C4018: '<' : signed/unsigned mismatch
+cprotocol.cpp(616): warning C4018: '<' : signed/unsigned mismatch
+  EthernetAPI.cpp
+EthernetAPI.cpp(7): warning C4005: 'MAX_BULK_READ_PACKET_SIZE' : macro redefinition
+          e:\middleapi\ethernetapi\ethernetapi\EthernetAPI.h(26) : see previous definition of 'MAX_BULK_READ_PACKET_SIZE'
+EthernetAPI.cpp(8): warning C4005: 'MAX_BULK_READ_DATA_SIZE' : macro redefinition
+          e:\middleapi\ethernetapi\ethernetapi\EthernetAPI.h(27) : see previous definition of 'MAX_BULK_READ_DATA_SIZE'
+EthernetAPI.cpp(14): warning C4005: 'DEBUG_STR_LEN' : macro redefinition
+          e:\middleapi\ethernetapi\ethernetapi\EthernetAPI.h(28) : see previous definition of 'DEBUG_STR_LEN'
+EthernetAPI.cpp(71): warning C4244: 'argument' : conversion from 'unsigned __int64' to 'size_t', possible loss of data
+EthernetAPI.cpp(89): warning C4244: 'argument' : conversion from 'unsigned __int64' to 'size_t', possible loss of data
+EthernetAPI.cpp(90): warning C4244: '+=' : conversion from 'unsigned __int64' to 'int', possible loss of data
+EthernetAPI.cpp(114): warning C4244: 'argument' : conversion from 'unsigned __int64' to 'uint', possible loss of data
+EthernetAPI.cpp(1230): warning C4244: 'argument' : conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+EthernetAPI.cpp(1230): warning C4244: 'argument' : conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+Link:
+  c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\MiddleApi\Release\EthernetAPI.dll" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\EthernetAPI.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\MiddleApi\Release\EthernetAPI.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\MiddleApi\Release\EthernetAPI.lib" /MACHINE:X86 /DLL Release\cprotocol.obj
+  Release\EthernetAPI.obj
+     Creating library E:\MiddleApi\Release\EthernetAPI.lib and object E:\MiddleApi\Release\EthernetAPI.exp
+  Generating code
+  Finished generating code
+  EthernetAPI.vcxproj -> E:\MiddleApi\Release\EthernetAPI.dll
+Manifest:
+  c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"E:\MiddleApi\Release\EthernetAPI.dll;#2" /manifest Release\EthernetAPI.dll.intermediate.manifest
+FinalizeBuildStatus:
+  Deleting file "Release\EthernetAPI.unsuccessfulbuild".
+  Touching "Release\EthernetAPI.lastbuildstate".
+Done Building Project "E:\MiddleApi\EthernetAPI\EthernetAPI\EthernetAPI.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.25

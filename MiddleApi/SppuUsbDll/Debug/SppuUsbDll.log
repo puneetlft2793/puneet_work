@@ -1,0 +1,26 @@
+﻿Build started 6/27/2018 11:32:44 AM.
+     1>Project "C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\SppuUsbDll\SppuUsbDll.vcxproj" on node 4 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\SppuUsbDll.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\Debug\SppuUsbDll.dll" /INCREMENTAL:NO /NOLOGO .\library\x86\CyAPI.lib SetupAPI.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\SppuUsbDll.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\Debug\SppuUsbDll.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\Debug\SppuUsbDll.lib" /MACHINE:X86 /DLL Debug\dllmain.obj
+         Debug\SppuUsbDll.obj
+         Debug\stdafx.obj
+     1>dllmain.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+            Creating library C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\Debug\SppuUsbDll.lib and object C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\Debug\SppuUsbDll.exp
+     1>LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         SppuUsbDll.vcxproj -> C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\Debug\SppuUsbDll.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\Debug\SppuUsbDll.dll;#2" /manifest Debug\SppuUsbDll.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\SppuUsbDll.unsuccessfulbuild".
+         Touching "Debug\SppuUsbDll.lastbuildstate".
+     1>Done Building Project "C:\Users\admin\Desktop\ISTRAC\SVN\SOFTWARE\MiddleApi\SppuUsbDll\SppuUsbDll.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.95
