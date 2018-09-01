@@ -1,4 +1,7 @@
+#include <unistd.h>
+#include <sys/stat.h>
 #include "EthernetAPI.h"
+#include "linuxdefines.h"
 
 using namespace MiddleEthernetAPI;
 
@@ -41,7 +44,7 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
     }
     mPrintDebug("==========================================================================\n");
 
-    if((_access(pchFilePath, 2)) != -1)
+    if((access(pchFilePath, 2)) != -1)
     {
         err	=	fopen_s(&pFile, pchFilePath, "rb");
         if(err	==	0)
@@ -207,7 +210,7 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
         }
         mPrintDebug("==========================================================================");
 
-        if((_access(pchFilePath, 2)) != -1)
+        if((access(pchFilePath, 2)) != -1)
         {
             err	=	fopen_s(&pFile, pchFilePath, "rb");
 
@@ -1395,7 +1398,7 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
             FILE * pFile;
             errno_t err;
 
-            if((_access("debug_eth.log", 2)) != -1)
+            if((access("debug_eth.log", 2)) != -1)
             {
                 err	=	fopen_s(&pFile,"debug_eth.log","a");
                 if(err	==	0)

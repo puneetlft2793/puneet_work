@@ -1,18 +1,22 @@
 #pragma once
 
+#ifdef WINDOWS
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <io.h>
+#endif
+
 #include <stdio.h>
 #include "cprotocol.h"
+#include "linuxdefines.h"
 
 //#define DEBUG_PRINTS_ON
 //#define RCV_BULK_PKT_STS
 #define ONE_SOCKET
 
-#pragma comment(lib, "Ws2_32.lib")
+//#pragma comment(lib, "Ws2_32.lib")
 
-#define PREFIX_ETHERNET __declspec(dllexport)
+//#define PREFIX_ETHERNET __declspec(dllexport)
 
 #ifdef ONE_SOCKET
 // SD 
@@ -82,30 +86,21 @@ namespace MiddleEthernetAPI
 			LFT_SPPU_DEV_ETH_DAC_COMM           =   11
 		};
 
-		PREFIX_ETHERNET EthernetAPI(void);
+		EthernetAPI(void);
 
-		PREFIX_ETHERNET int FileWrite(SPPUDeviceTypeEtherent devType, unsigned int startAddress, unsigned int size,  char *pchFilePath);
+		int FileWrite(SPPUDeviceTypeEtherent devType, unsigned int startAddress, unsigned int size,  char *pchFilePath);
 
-		PREFIX_ETHERNET int FileRead(SPPUDeviceTypeEtherent devType, unsigned int startAddress, unsigned int size,  char *pchFilePath, unsigned int *numBytesRdSuccess);
-		PREFIX_ETHERNET int FileRead_10GB(SPPUDeviceTypeEtherent devType, unsigned long long startAddress, unsigned long long size,  char *pchFilePath, unsigned long long *numBytesRdSuccess);
+		int FileRead(SPPUDeviceTypeEtherent devType, unsigned int startAddress, unsigned int size,  char *pchFilePath, unsigned int *numBytesRdSuccess);
 
-		PREFIX_ETHERNET int MemWrite(SPPUDeviceTypeEtherent devType, unsigned int startAddress, unsigned int size,  char *pchData);
-		PREFIX_ETHERNET int FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long long startAddress, unsigned long long size,  char *pchFilePath);
+		int FileRead_10GB(SPPUDeviceTypeEtherent devType, unsigned long long startAddress, unsigned long long size,  char *pchFilePath, unsigned long long *numBytesRdSuccess);
 
-		PREFIX_ETHERNET int MemRead(SPPUDeviceTypeEtherent devType, unsigned int startAddress, unsigned int size, char *pchData);
+		int MemWrite(SPPUDeviceTypeEtherent devType, unsigned int startAddress, unsigned int size,  char *pchData);
 
-		PREFIX_ETHERNET int MemReadInternal(SPPUDeviceTypeEtherent devType, unsigned int startAddress, unsigned int size, char *pchData, unsigned int *numBytesRdSuccess);
+		int FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long long startAddress, unsigned long long size,  char *pchFilePath);
 
-		//Return integer
-		//  0		-	Successful
-		// -1		-	Invalid Socket
-		// -2		-	Send Failed
-		// -3		-	Receive Failed
-		// -4		-	Unable to form the Packet
-		// -5		-	Invalid Response
-		// -10		-	Invalid Magic Byte Received
-		// -20		-   Invalid Packet Length
-		PREFIX_ETHERNET int RegWrite(unsigned int address, unsigned int data);
+		int MemRead(SPPUDeviceTypeEtherent devType, unsigned int startAddress, unsigned int size, char *pchData);
+
+		int MemReadInternal(SPPUDeviceTypeEtherent devType, unsigned int startAddress, unsigned int size, char *pchData, unsigned int *numBytesRdSuccess);
 
 		//Return integer
 		//  0		-	Successful
@@ -116,7 +111,18 @@ namespace MiddleEthernetAPI
 		// -5		-	Invalid Response
 		// -10		-	Invalid Magic Byte Received
 		// -20		-   Invalid Packet Length
-		PREFIX_ETHERNET int RegRead(unsigned int address, unsigned int &data);
+		int RegWrite(unsigned int address, unsigned int data);
+
+		//Return integer
+		//  0		-	Successful
+		// -1		-	Invalid Socket
+		// -2		-	Send Failed
+		// -3		-	Receive Failed
+		// -4		-	Unable to form the Packet
+		// -5		-	Invalid Response
+		// -10		-	Invalid Magic Byte Received
+		// -20		-   Invalid Packet Length
+		int RegRead(unsigned int address, unsigned int &data);
 
 		// Return integer
 		//  0		-	Successful
@@ -125,13 +131,13 @@ namespace MiddleEthernetAPI
 		// -3		-	Get Address Info failed
 		// -4		-	Creating socket failed
 		// -5		-   Connecting to socket failed
-		PREFIX_ETHERNET int ConnectSockets(Sockets a_objSockets);
+		int ConnectSockets(Sockets a_objSockets);
 
-		PREFIX_ETHERNET void DisconnectSockets();
+		void DisconnectSockets();
 
-		PREFIX_ETHERNET ~EthernetAPI(void);
+		~EthernetAPI(void);
 
-		void EthernetAPI::mPrintDebug(char *a_strDebug);
+		void mPrintDebug(char *a_strDebug);
 	};
 
 }
