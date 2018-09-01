@@ -1,5 +1,8 @@
 #include <unistd.h>
 #include <sys/stat.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netdb.h>
 #include "EthernetAPI.h"
 #include "linuxdefines.h"
 
@@ -36,13 +39,13 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
     FILE * pFile;
     errno_t err;
 
-    mPrintDebug("==========================================================================\n");
+    mPrintDebug((char *)"==========================================================================\n");
     {
         char strDebug[DEBUG_STR_LEN]	=	{'\0'};
-        sprintf_s(strDebug, DEBUG_STR_LEN,"FileWrite:: startAddress:%lld size:%lld Filename:%s", startAddress, size, pchFilePath);
+        snprintf(strDebug, DEBUG_STR_LEN,"FileWrite:: startAddress:%lld size:%lld Filename:%s", startAddress, size, pchFilePath);
         mPrintDebug(strDebug);
     }
-    mPrintDebug("==========================================================================\n");
+    mPrintDebug((char *)"==========================================================================\n");
 
     if((access(pchFilePath, 2)) != -1)
     {
@@ -59,13 +62,13 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
                 {
                     char buffer[MAX_BYTES_WRITE_AT_ONCE] = {'\0'};
                     int count = 0;
-                    mPrintDebug("==========================================================================\n");
+                    mPrintDebug((char *)"==========================================================================\n");
                     {
                         char strDebug[DEBUG_STR_LEN]	=	{'\0'};
-                        sprintf_s(strDebug, DEBUG_STR_LEN,"FileWrite:: startAddress:%lld size:%lld Filename:%s", startAddress, size, pchFilePath);
+                        snprintf(strDebug, DEBUG_STR_LEN,"FileWrite:: startAddress:%lld size:%lld Filename:%s", startAddress, size, pchFilePath);
                         mPrintDebug(strDebug);
                     }
-                    mPrintDebug("==========================================================================\n");
+                    mPrintDebug((char *)"==========================================================================\n");
 
                     if(size < MAX_BYTES_WRITE_AT_ONCE)
                     {
@@ -202,13 +205,13 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
         FILE * pFile;
         errno_t err;
 
-        mPrintDebug("==========================================================================");
+        mPrintDebug((char *)"==========================================================================");
         {
             char strDebug[DEBUG_STR_LEN]	=	{'\0'};
-            sprintf_s(strDebug, DEBUG_STR_LEN,"FileWrite:: startAddress:%d size:%d Filename:%s", startAddress, size, pchFilePath);
+            snprintf(strDebug, DEBUG_STR_LEN,"FileWrite:: startAddress:%d size:%d Filename:%s", startAddress, size, pchFilePath);
             mPrintDebug(strDebug);
         }
-        mPrintDebug("==========================================================================");
+        mPrintDebug((char *)"==========================================================================");
 
         if((access(pchFilePath, 2)) != -1)
         {
@@ -472,7 +475,7 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
             unsigned int a_nLen = len, a_nTotLen = len, a_nSent = 0x0;
             {
                 char strDebug[DEBUG_STR_LEN]	=	{'\0'};
-                sprintf_s(strDebug, DEBUG_STR_LEN,"TransmitData:: len:%d \n", len);
+                snprintf(strDebug, DEBUG_STR_LEN,"TransmitData:: len:%d \n", len);
                 mPrintDebug(strDebug);
             }
 
@@ -498,7 +501,7 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
 #ifdef DEBUG_PRINTS_ON
                         {
                             char strDebug[DEBUG_STR_LEN]	=	{'\0'};
-                            sprintf_s(strDebug, DEBUG_STR_LEN,"send Failure:: len:%d \n", a_nLen);
+                            snprintf(strDebug, DEBUG_STR_LEN,"send Failure:: len:%d \n", a_nLen);
                             mPrintDebug(strDebug);
                         }
                         printf("send failed: %d\n", WSAGetLastError());
@@ -801,7 +804,7 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
             int pktLen	=	0;
             CProtocol objProtocol;
             char strDebug[DEBUG_STR_LEN]	=	{'\0'};
-            sprintf_s(strDebug, DEBUG_STR_LEN,"address = %d, data = %d\n", address, data);
+            snprintf(strDebug, DEBUG_STR_LEN,"address = %d, data = %d\n", address, data);
             mPrintDebug(strDebug);
             pktLen	=	objProtocol.mPktRegRead(address,&byArrPkt);
 
@@ -1143,19 +1146,19 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
             FILE * pFile;
             errno_t err;
 
-            mPrintDebug("==========================================================================");
+            mPrintDebug((char *)"==========================================================================");
             {
                 char strDebug[DEBUG_STR_LEN]	=	{'\0'};
-                sprintf_s(strDebug, DEBUG_STR_LEN,"FileRead:: startAddress:%d size:%d Filename:%s", startAddress, size, pchFilePath);
+                snprintf(strDebug, DEBUG_STR_LEN,"FileRead:: startAddress:%d size:%d Filename:%s", startAddress, size, pchFilePath);
                 mPrintDebug(strDebug);
             }
-            mPrintDebug("==========================================================================");
+            mPrintDebug((char *)"==========================================================================");
 
             err	=	fopen_s(&pFile, pchFilePath, "wb");
 
             if( err != 0)
             {
-                mPrintDebug("Unable to open file\n");
+                mPrintDebug((char *)"Unable to open file\n");
                 return -2;
             }
 
@@ -1172,13 +1175,13 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
                 err = MemReadInternal(devType, startAddress, numByToRd, rDevBuf, &numByRdSuccess);
                 if(err)
                 {
-                    mPrintDebug("==========================================================================");
+                    mPrintDebug((char *)"==========================================================================");
                     {
                         char strDebug[DEBUG_STR_LEN]	=	{'\0'};
-                        sprintf_s(strDebug, DEBUG_STR_LEN,"Ethernet DEBUG :: numByRdSuccess :%d\n", numByRdSuccess);
+                        snprintf(strDebug, DEBUG_STR_LEN,"Ethernet DEBUG :: numByRdSuccess :%d\n", numByRdSuccess);
                         mPrintDebug(strDebug);
                     }
-                    mPrintDebug("==========================================================================");
+                    mPrintDebug((char *)"==========================================================================");
 
                     numByRdSuccess = 0;
                     break;
@@ -1204,18 +1207,18 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
             FILE * pFile;
             errno_t err;
 
-            mPrintDebug("==========================================================================\n");
+            mPrintDebug((char *)"==========================================================================\n");
             {
                 char strDebug[DEBUG_STR_LEN]	=	{'\0'};
-                sprintf_s(strDebug, DEBUG_STR_LEN,"FileRead:: startAddress:%lld size:%lld Filename:%s", startAddress, size, pchFilePath);
+                snprintf(strDebug, DEBUG_STR_LEN,"FileRead:: startAddress:%lld size:%lld Filename:%s", startAddress, size, pchFilePath);
                 mPrintDebug(strDebug);
             }
-            mPrintDebug("==========================================================================\n");
+            mPrintDebug((char *)"==========================================================================\n");
 
             err	=	fopen_s(&pFile, pchFilePath, "wb");
             if( err != 0)
             {
-                mPrintDebug("Unable to open file\n");
+                mPrintDebug((char *)"Unable to open file\n");
                 return -2;
             }
 
@@ -1274,7 +1277,7 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
             CProtocol objProtocol;
             char strDebug[DEBUG_STR_LEN]	=	{'\0'};
             {
-                sprintf_s(strDebug, DEBUG_STR_LEN,"MemReadInternal:: startAddress:%x size:%x \n", startAddress, size);
+                snprintf(strDebug, DEBUG_STR_LEN,"MemReadInternal:: startAddress:%x size:%x \n", startAddress, size);
                 mPrintDebug(strDebug);
             }
 
@@ -1283,13 +1286,13 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
 
             if(byArrPkt	==	0)
             {
-                mPrintDebug("Error: Unable to form Bulk Read Packet \n");
+                mPrintDebug((char *)"Error: Unable to form Bulk Read Packet \n");
                 return -4;
             }
 
             if(objSocketCommand	==	INVALID_SOCKET)
             {
-                mPrintDebug("Error: Command socket not initialized \n");
+                mPrintDebug((char *)"Error: Command socket not initialized \n");
                 delete byArrPkt;
                 return -1;
             }
@@ -1298,7 +1301,7 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
 
             if (iResult == SOCKET_ERROR)
             {
-                mPrintDebug("Error: send failed \n");
+                mPrintDebug((char *)"Error: send failed \n");
                 delete byArrPkt;
                 return -2;
             }
@@ -1324,13 +1327,13 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
                 }
                 else if ( iResult == 0 )
                 {
-                    mPrintDebug("Error: Connection Closed \n");
+                    mPrintDebug((char *)"Error: Connection Closed \n");
                     delete byArrPkt;
                     return -3;
                 }
                 else
                 {
-                    mPrintDebug("Error: Return zero size \n");
+                    mPrintDebug((char *)"Error: Return zero size \n");
                     delete byArrPkt;
                     return -3;
                 }
@@ -1338,7 +1341,7 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
 
             if(i == 5000)
             {
-                mPrintDebug("Error: Timeout\n");
+                mPrintDebug((char *)"Error: Timeout\n");
                 delete byArrPkt;
                 return -4;
             }
@@ -1349,16 +1352,16 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
             if(ret < 0)
             {
                 if(ret == -1)
-                    mPrintDebug("Error: wrong magic byte \n");
+                    mPrintDebug((char *)"Error: wrong magic byte \n");
                 else
-                    mPrintDebug("Error: mPktParseBulkRead \n");
+                    mPrintDebug((char *)"Error: mPktParseBulkRead \n");
                 delete byArrPkt;
                 return  ret;
             }
 
             if(objProtoRespPkt.mGetStatus()   !=  0)
             {
-                mPrintDebug("Error: Wrong Status \n");
+                mPrintDebug((char *)"Error: Wrong Status \n");
                 delete byArrPkt;
                 return  -5;
             }
@@ -1378,7 +1381,7 @@ int EthernetAPI::FileWrite_10GB(SPPUDeviceTypeEtherent devType, unsigned long lo
 
             {
                 char strDebug[DEBUG_STR_LEN]	=	{'\0'};
-                sprintf_s(strDebug, DEBUG_STR_LEN,"MemReadInternal Done::  startAddress:%d size:%d  numByRdSuccess:%d", startAddress, size, *numBytesRdSuccess);
+                snprintf(strDebug, DEBUG_STR_LEN,"MemReadInternal Done::  startAddress:%d size:%d  numByRdSuccess:%d", startAddress, size, *numBytesRdSuccess);
                 mPrintDebug(strDebug);
             }
 
